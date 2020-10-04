@@ -5,7 +5,7 @@
     <div class="jumbotron">
         <h1>Catalogo Productos Electronicos</h1>
         <p class="lead">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
-        <p><a href="Catalogo.aspx" class="btn btn-warning btn-lg"> Ver Catalogo &raquo;</a></p> <!-- aca vincular con la aspx de productos -->
+        <p><a href="Catalogo.aspx" class="btn btn-warning btn-lg"> Ver Catalogo &raquo;</a></p>
     </div>
 
     <div class="row">
