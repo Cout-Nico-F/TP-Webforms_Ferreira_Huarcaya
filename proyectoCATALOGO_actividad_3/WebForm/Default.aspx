@@ -15,7 +15,7 @@
                 Donec ut massa a lacus dignissim tristique. Suspendisse id lorem pharetra, rhoncus orci eu, tempus lorem. Quisque aliquet imperdiet enim eleifend aliquet. Integer lacinia mi sit amet fermentum imperdiet. Etiam interdum leo nec erat efficitur tempor. Etiam vel ultrices 
             </p>
             <p>
-                <a class="btn btn-warning" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn Less &raquo;</a>
+                <a class="btn btn-warning" href="About.aspx">Learn Less &raquo;</a>
             </p>
         </div>
         <div class="col-md-4">
@@ -24,7 +24,7 @@
                 Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis odio turpis, rutrum fringilla felis ut, egestas mattis nulla. Mauris eget iaculis massa. Proin finibus neque sagittis magna porta dignissim quis vitae nunc. Duis efficitur pharetra 
             </p>
             <p>
-                <a class="btn btn-warning" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn Less &raquo;</a>
+                <a class="btn btn-warning" href="About.aspx">Learn Less &raquo;</a>
             </p>
         </div>
         <div class="col-md-4">
