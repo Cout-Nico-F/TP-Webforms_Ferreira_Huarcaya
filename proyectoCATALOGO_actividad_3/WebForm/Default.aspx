@@ -3,38 +3,36 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
     <div class="jumbotron">
-        <h1>ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
-        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+        <h1>Catalogo Productos Electronicos</h1>
+        <p class="lead">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+        <p><a href="http://www.asp.net" class="btn btn-primary btn-lg"> Ver Catalogo &raquo;</a></p> <!-- aca vincular con la aspx de productos -->
     </div>
 
     <div class="row">
         <div class="col-md-4">
-            <h2>Getting started</h2>
+            <h2>Ferreira</h2>
             <p>
-                ASP.NET Web Forms lets you build dynamic websites using a familiar drag-and-drop, event-driven model.
-            A design surface and hundreds of controls and components let you rapidly build sophisticated, powerful UI-driven sites with data access.
+                Donec ut massa a lacus dignissim tristique. Suspendisse id lorem pharetra, rhoncus orci eu, tempus lorem. Quisque aliquet imperdiet enim eleifend aliquet. Integer lacinia mi sit amet fermentum imperdiet. Etiam interdum leo nec erat efficitur tempor. Etiam vel ultrices 
             </p>
             <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn more &raquo;</a>
-            </p>
-        </div>
-        <div class="col-md-4">
-            <h2>Get more libraries</h2>
-            <p>
-                NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.
-            </p>
-            <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn more &raquo;</a>
+                <a class="btn btn-warning" href="https://go.microsoft.com/fwlink/?LinkId=301948">Learn Less &raquo;</a>
             </p>
         </div>
         <div class="col-md-4">
-            <h2>Web Hosting</h2>
+            <h2>Huarcaya</h2>
             <p>
-                You can easily find a web hosting company that offers the right mix of features and price for your applications.
+                Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis odio turpis, rutrum fringilla felis ut, egestas mattis nulla. Mauris eget iaculis massa. Proin finibus neque sagittis magna porta dignissim quis vitae nunc. Duis efficitur pharetra 
             </p>
             <p>
-                <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
+                <a class="btn btn-warning" href="https://go.microsoft.com/fwlink/?LinkId=301949">Learn Less &raquo;</a>
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h2>Web Not Hosting</h2>
+            <p>
+                Nunc commodo leo tincidunt fringilla ultricies. Nullam sed enim ut erat mattis blandit at et neque. Aliquam erat volutpat. Nulla feugiat rutrum tempor.            </p>
+            <p>
+                <a class="btn btn-warning" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn Trash &raquo;</a>
             </p>
         </div>
     </div>
