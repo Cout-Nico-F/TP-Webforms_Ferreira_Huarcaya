@@ -5,19 +5,21 @@
         <h1>Placeholder with style</h1>
         <p>Aca se va a ver algo y va a estar bueno</p>
     </div>
-   <div class="Container">
-        <div class="row justify -content-center">
-            <div class="col md-4">
-                <div class="card" style ="width:18rem;">
+                <div class="card text-center" style ="width:20rem;">
                     <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/006.png" alt="Alternate Text" /> 
                     <div class="cards-body">
                         <h5 class="card-title">Charizard</h5>
                         <p class="card-text"> Hola, soy de fuego</p>
                     </div>
                 </div>
-           </div>
-        </div>
-    </div> 
+    <div class="card text-center" style="width: 26rem; border: dashed; border-color: brown ; padding-bottom: 2rem; background-color: antiquewhite">
+  <div class="card-body">
+      <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/006.png" alt="Alternate Text" /> 
+    <h5 class="card-title">Charizard</h5>
+    <p class="card-text">Hola, soy de fuego</p>
+    <a href="Default.aspx" class="btn btn-primary">Buy!</a>
+  </div>
+</div>
     
 
  <!-- Codigo Alternativo -->
