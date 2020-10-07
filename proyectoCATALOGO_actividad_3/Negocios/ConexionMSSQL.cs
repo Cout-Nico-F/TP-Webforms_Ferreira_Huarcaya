@@ -10,12 +10,8 @@ namespace Negocios
     class ConexionMSSQL
     {
         public SqlDataReader dataReader { get; set; }
-
         public SqlConnection connection { get; set; }
-
         public SqlCommand command { get; set; }
-
-
 
         public void Conectar  ()
         {

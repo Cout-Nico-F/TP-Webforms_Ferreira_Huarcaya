@@ -66,12 +66,12 @@ namespace Winform
 
                 if (articulo.Id == 0)
                 {
-                    articuloNegocio.agregarArticulo(articulo);
+                    articuloNegocio.AgregarArticulo(articulo);
                 }
 
                 else
                 {
-                    articuloNegocio.modificarArticulo(articulo);
+                    articuloNegocio.ModificarArticulo(articulo);
                     Close();
                 }
 

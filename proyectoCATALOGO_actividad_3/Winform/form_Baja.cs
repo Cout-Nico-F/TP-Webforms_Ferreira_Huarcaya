@@ -44,7 +44,7 @@ namespace Winform
         private void btn_AceptarBaja_Click(object sender, EventArgs e)
         {
             ArticulosNegocio articuloNegocio = new ArticulosNegocio();
-            articuloNegocio.bajaArticulo(_articuloSeleccionado.Id);
+            articuloNegocio.BajaArticulo(_articuloSeleccionado.Id);
 
             MessageBox.Show("Articulo eliminado exitosamente", "Atencion", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

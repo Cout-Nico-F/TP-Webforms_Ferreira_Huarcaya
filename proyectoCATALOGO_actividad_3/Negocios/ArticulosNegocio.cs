@@ -80,7 +80,7 @@ namespace Negocios
             return listaArticulos;
         }
 
-        public void agregarArticulo(Articulo nuevo)
+        public void AgregarArticulo(Articulo nuevo)
         {
             SqlConnection connection = new SqlConnection();
             SqlCommand command = new SqlCommand();
@@ -94,7 +94,7 @@ namespace Negocios
             command.ExecuteNonQuery();
         }
 
-        public void modificarArticulo(Articulo nuevo)
+        public void ModificarArticulo(Articulo nuevo)
         {
             SqlConnection connection = new SqlConnection();
             SqlCommand command = new SqlCommand();
@@ -123,7 +123,7 @@ namespace Negocios
             }
         }
 
-        public void bajaArticulo(int idArticulo)
+        public void BajaArticulo(int idArticulo)
         {
             SqlConnection connection = new SqlConnection();
             SqlCommand command = new SqlCommand();
