@@ -38,9 +38,9 @@
 
     <div>
         <address>
-            UTN/FRGP<br />
+            Programacion 3 - UTN/FRGP<br />
             Buenos Aires, Argentina<br />
-            <abbr title="Phone">Tel:</abbr>
+            <abbr title="Telefono">Tel:</abbr>
             0800-PROgramming
         </address>
     </div>
