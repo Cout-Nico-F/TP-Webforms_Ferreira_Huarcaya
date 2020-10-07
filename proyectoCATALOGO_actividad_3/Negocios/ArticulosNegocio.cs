@@ -12,33 +12,31 @@ namespace Negocios
     {
         public List<Articulo> ListarArticulos()
         {
-            SqlConnection connection = new SqlConnection();
-            SqlCommand command = new SqlCommand();
-            SqlDataReader Reader;
-            List<Articulo> listaArticulos = new List<Articulo>(); //Refactorizé el nombre de Table a listaArticulos
+            List<Articulo> listaArticulos = new List<Articulo>();
 
-            connection.ConnectionString = "data source =localhost\\SQLEXPRESS01; initial catalog =CATALOGO_DB; integrated security =sspi";
-            command.CommandType = System.Data.CommandType.Text;
+            ConexionMSSQL conexion = new ConexionMSSQL();
 
-            command.CommandText = "select a.codigo, a.nombre, a.descripcion, a.imagenUrl, a.precio, m.descripcion as Marca , c.descripcion as Categoria, a.id As IDArticulo, c.id As IDCategoria, m.id As IDMarca from articulos a left join categorias c on a.idcategoria = c.id inner join marcas m on a.idmarca = m.id";
+            conexion.Conectar();
+            string consulta = "select a.codigo, a.nombre, a.descripcion, a.imagenUrl, a.precio, m.descripcion as Marca , c.descripcion as Categoria, a.id As IDArticulo, c.id As IDCategoria, m.id As IDMarca from articulos a left join categorias c on a.idcategoria = c.id inner join marcas m on a.idmarca = m.id";
 
-            command.Connection = connection;
-            connection.Open();
-            Reader = command.ExecuteReader();
+            conexion.SetConsulta(consulta);
 
-            while (Reader.Read())
+            SqlDataReader lectura =  conexion.Leer();
+
+
+            while (lectura.Read())
             {
                 Articulo aux = new Articulo();
                 aux.Marca = new Marca();
                 aux.Categoria = new Categoria();
 
-                aux.Codigo = Reader.GetString(0);
-                aux.Nombre = Reader.GetString(1);
-                aux.Descripcion = Reader.GetString(2);
-                aux.Precio = Reader.GetDecimal(4);
+                aux.Codigo = lectura.GetString(0);
+                aux.Nombre = lectura.GetString(1);
+                aux.Descripcion = lectura.GetString(2);
+                aux.Precio = lectura.GetDecimal(4);
                 try
                 {
-                    aux.ImagenUrl = Reader.GetString(3);
+                    aux.ImagenUrl = lectura.GetString(3);
                 }
                 catch (System.Data.SqlTypes.SqlNullValueException)
                 {
@@ -46,21 +44,21 @@ namespace Negocios
                 }
                 try
                 {
-                    aux.Marca.Descripcion = (string)Reader.GetString(5);
+                    aux.Marca.Descripcion = (string)lectura.GetString(5);
                 }
                 catch (System.Data.SqlTypes.SqlNullValueException)
                 {
                 }
                 try
                 {
-                    aux.Marca.Id = Reader.GetInt32(9);
+                    aux.Marca.Id = lectura.GetInt32(9);
                 }
                 catch (System.Data.SqlTypes.SqlNullValueException)
                 {
                 }
                 try
                 {
-                    aux.Categoria.Descripcion = (string)Reader.GetString(6);
+                    aux.Categoria.Descripcion = (string)lectura.GetString(6);
                 }
                 catch (System.Data.SqlTypes.SqlNullValueException)
                 {
@@ -68,17 +66,17 @@ namespace Negocios
                 }
                 try
                 {
-                    aux.Categoria.Id = Reader.GetInt32(8);
+                    aux.Categoria.Id = lectura.GetInt32(8);
                 }
                 catch (System.Data.SqlTypes.SqlNullValueException)
                 {
                 }
 
-                aux.Id = Reader.GetInt32(7);
+                aux.Id = lectura.GetInt32(7);
 
                 listaArticulos.Add(aux);
             }
-            connection.Close();
+            conexion.Desconectar();
             return listaArticulos;
         }
 

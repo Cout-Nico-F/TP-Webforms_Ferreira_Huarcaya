@@ -56,8 +56,6 @@ namespace Winform
 
             if (ComprobarCampos())
             {
-
-
                 articulo.Codigo = txt_Codigo.Text;
                 articulo.Nombre = txt_Nombre.Text;
                 articulo.Descripcion = txt_Descripcion.Text;
@@ -76,7 +74,6 @@ namespace Winform
                     articuloNegocio.modificarArticulo(articulo);
                     Close();
                 }
-
 
                 MessageBox.Show("Operacion realizada con exito", "Exito");
                 Cargar();
