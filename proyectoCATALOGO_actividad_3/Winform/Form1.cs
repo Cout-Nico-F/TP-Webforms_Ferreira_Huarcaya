@@ -78,7 +78,7 @@ namespace Winform
                     pbImagen.Load(reg.ImagenUrl);
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 pbImagen.Image = null;
             }

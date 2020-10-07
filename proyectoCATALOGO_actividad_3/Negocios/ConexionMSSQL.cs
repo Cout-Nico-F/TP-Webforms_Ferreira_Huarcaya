@@ -42,8 +42,9 @@ namespace Negocios
         {
             Conectar();
             SetConsulta(consulta);
-            return Leer();
+            SqlDataReader lectura = Leer();
             Desconectar();
+            return lectura;
         }
     }
 }

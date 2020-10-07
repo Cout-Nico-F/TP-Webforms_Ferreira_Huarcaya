@@ -34,7 +34,7 @@ namespace Winform
                     pb_Imagen.Load(reg.ImagenUrl);
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 pb_Imagen.Image = null; //de esta manera se setea en nula la imagen para que no muestre la anterior.
             }
