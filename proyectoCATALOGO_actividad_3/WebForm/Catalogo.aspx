@@ -5,17 +5,29 @@
     <div class="jumbotron">
         <h1>Lista de Articulos</h1>
         <p>Aca se va a ver algo y va a estar bueno</p>
-    </div> 
-
-
-    <div class="card text-center" style="width: 26rem; border: dashed; border-color: brown; padding-bottom: 2rem; background-color: antiquewhite">
-        <div class="card-body">
-            <img class="card-img-top" src="<%= //Aca necesito acceder al primero de la lista Catalogo.lista %>" alt="Alternate Text" />
-            <h4 class="card-title">Charizard <span class ="badge badge-secondary">Nuevo</span></h4>
-            <p class="card-text">Hola, soy de fuego</p>
-            <a href="Default.aspx" class="btn btn-primary">Quiero uno!</a>
-        </div>
     </div>
+
+    <div class="row">
+        <%foreach (Modelo.Articulo item in lista)
+            { %>
+                <div class="col-md-4">
+                    <div class="card text-center" style="width: 26rem; border: dashed; border-color: brown; padding-bottom: 2rem; background-color: antiquewhite">
+                    <div class="card-body">
+                    <img class="card-img-top" src="<%=item.ImagenUrl%>" alt="Alternate Text" style="max-height: 8vw; max-width: 8vw;; margin: 2vw;"/>
+                    <h4 class="card-title"><%= item.Nombre %> <span class="badge badge-secondary">Nuevo</span></h4>
+                    <p class="card-text"><%= item.Marca %></p>
+                    <p class="card-text">( <%= item.Descripcion %> )</p>
+                    <p class="card-text">$<%= item.Precio %></p>
+                    <a href="Default.aspx" class="btn btn-primary">Quiero uno!</a>
+                    </div>
+                </div>
+        </div>
+
+        <% } %>
+    </div>
+
+
+
 
     <!-- Codigo Alternativo -->
 

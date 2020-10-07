@@ -11,11 +11,13 @@ namespace WebForm
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
+        public List<Articulo> lista { get; set; }
+
         protected void Page_Load(object sender, EventArgs e)
         {
             ArticulosNegocio artNeg = new ArticulosNegocio();
-            Catalogo catalogo = new Catalogo();
-            catalogo.lista = artNeg.ListarArticulos();
+           // Catalogo catalogo = new Catalogo();
+            lista = artNeg.ListarArticulos();
 
         }
         
