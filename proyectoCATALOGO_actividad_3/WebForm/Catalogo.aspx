@@ -10,10 +10,10 @@
 
     <div class="card text-center" style="width: 26rem; border: dashed; border-color: brown; padding-bottom: 2rem; background-color: antiquewhite">
         <div class="card-body">
-            <img class="card-img-top" src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/006.png" alt="Alternate Text" />
+            <img class="card-img-top" src="<%= //Aca necesito acceder al primero de la lista Catalogo.lista %>" alt="Alternate Text" />
             <h4 class="card-title">Charizard <span class ="badge badge-secondary">Nuevo</span></h4>
             <p class="card-text">Hola, soy de fuego</p>
-            <a href="Default.aspx" class="btn btn-primary">Buy!</a>
+            <a href="Default.aspx" class="btn btn-primary">Quiero uno!</a>
         </div>
     </div>
 
