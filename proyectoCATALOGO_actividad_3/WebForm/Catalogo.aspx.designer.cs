@@ -13,23 +13,5 @@ namespace WebForm
 
     public partial class WebForm1
     {
-
-        /// <summary>
-        /// Samsung control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Samsung;
-
-        /// <summary>
-        /// dgv_ListaWeb control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView dgv_ListaWeb;
     }
 }
