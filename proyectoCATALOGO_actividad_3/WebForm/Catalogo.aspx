@@ -28,14 +28,14 @@
         <%foreach (Modelo.Articulo item in lista)
             { %>
         <div class="col-xs-12 col-sm-4 col-md-3" style="margin-bottom: 1vw;">
-            <div class="card text-center h-100" style="width: 26rem; border: dashed; border-color: brown; padding-bottom: 2rem; background-color: antiquewhite;">
-                <div class="card-body">
-                    <img class="card-img-top" src="<%=item.ImagenUrl%>" alt="Alternate Text" style="max-height: 8vw; max-width: 8vw; margin: 1vw;" />
+            <div class="card text-center h-100" style="width: 26rem; border: dashed; border-color: brown; padding-bottom: 1rem; background-color: antiquewhite;">
+                <div class="card-body d-flex flex-column">
+                    <img class="mt-auto card-img-top" src="<%=item.ImagenUrl%>" alt="Alternate Text" style="max-height: 8vw; max-width: 8vw; margin: 3vw;" />
                     <h4 class="card-title"><%= item.Nombre %> <span class="badge badge-secondary">Nuevo</span></h4>
                     <p class="card-text"><%= item.Marca %></p>
                     <p class="card-text">( <%= item.Descripcion %> )</p>
                     <p class="card-text">$<%= item.Precio %></p>
-                    <a href="Default.aspx" class="btn btn-primary">Quiero uno!</a>
+                    <a href="Default.aspx" class="mt-auto btn btn-primary">Quiero uno!</a>
                 </div>
             </div>
         </div>
