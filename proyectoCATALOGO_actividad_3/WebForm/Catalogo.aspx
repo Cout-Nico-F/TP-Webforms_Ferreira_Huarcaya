@@ -27,10 +27,10 @@
     <div class="row">
         <%foreach (Modelo.Articulo item in lista)
             { %>
-        <div class="col-xs-12 col-sm-4 col-md-3">
-            <div class="card text-center" style="width: 26rem; border: dashed; border-color: brown; padding-bottom: 2rem; background-color: antiquewhite">
+        <div class="col-xs-12 col-sm-4 col-md-3" style="margin-bottom: 1vw;">
+            <div class="card text-center h-100" style="width: 26rem; border: dashed; border-color: brown; padding-bottom: 2rem; background-color: antiquewhite;">
                 <div class="card-body">
-                    <img class="card-img-top" src="<%=item.ImagenUrl%>" alt="Alternate Text" style="max-height: 8vw; max-width: 8vw; margin: 2vw;" />
+                    <img class="card-img-top" src="<%=item.ImagenUrl%>" alt="Alternate Text" style="max-height: 8vw; max-width: 8vw; margin: 1vw;" />
                     <h4 class="card-title"><%= item.Nombre %> <span class="badge badge-secondary">Nuevo</span></h4>
                     <p class="card-text"><%= item.Marca %></p>
                     <p class="card-text">( <%= item.Descripcion %> )</p>
@@ -39,7 +39,6 @@
                 </div>
             </div>
         </div>
-
         <% } %>
     </div>
 
