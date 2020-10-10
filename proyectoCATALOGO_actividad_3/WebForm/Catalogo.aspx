@@ -35,9 +35,12 @@
                     <p class="card-text"><%= item.Marca %></p>
                     <p class="card-text">( <%= item.Descripcion %> )</p>
                     <p class="card-text">$<%= item.Precio %></p>
-                    <a href="Default.aspx" class="mt-auto btn btn-primary">Quiero uno!</a>
+                    <!-- <a href="Default.aspx" class="mt-auto btn btn-primary">Quiero uno!</a>
                     <br />
-                    <a href="Detalles.aspx" class="mt-auto btn btn-primary">Ver detalles</a>
+                    <a href="Detalles.aspx" class="mt-auto btn btn-primary">Ver detalles</a> -->
+                    <a class="btn btn-primary" href="Default.aspx" role="button">Agregar al carrito</a>
+                    <br />
+                    <a class="btn btn-primary" href="Detalles.aspx" role="button">Ver detalles</a>
                 </div>
             </div>
         </div>
