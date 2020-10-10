@@ -36,6 +36,8 @@
                     <p class="card-text">( <%= item.Descripcion %> )</p>
                     <p class="card-text">$<%= item.Precio %></p>
                     <a href="Default.aspx" class="mt-auto btn btn-primary">Quiero uno!</a>
+                    <br />
+                    <a href="Detalles.aspx" class="mt-auto btn btn-primary">Ver detalles</a>
                 </div>
             </div>
         </div>
