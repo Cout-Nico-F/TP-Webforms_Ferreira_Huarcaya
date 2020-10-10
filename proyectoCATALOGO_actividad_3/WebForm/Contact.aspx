@@ -9,21 +9,12 @@
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="Apellidos" name="Apellidos">
             </div>
-
+        <br />
         <div class="form-group">
             <!-- <label  for="exampleFormControlInput1">Direccion de correo electronico</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="Email"> -->
+            <asp:Label Text="Correo electronico" runat="server" /><br />
             <asp:TextBox ID="txtEmail" runat="server" />
-        </div>
-
-        <div class="form-group">
-            <label for="exampleFormControlSelect1">Sexo</label>
-            <select class="form-control" id="exampleFormControlSelect1">
-                <option>Hombre</option>
-                <option>Mujer</option>
-                <option>Otro</option>
-            </select>
-            <!--Aca tengo que averiguar como se captura este dato para enviarlo como input y ponerle un nombre para el backend -->
         </div>
 
         <div class="form-group">
@@ -32,7 +23,16 @@
         </div>
 
         <!--<button type="submit" class="btn btn-success">Enviar</button> -->
-        <asp:Button ID="btnCorreo" Text="Enviar Correo" runat="server" Onclick ="btnCorreo_Click"/>
+            
+            <asp:Button ID="btnCorreo" Text="Enviar Correo" runat="server" Onclick ="btnCorreo_Click"/>
+        <br />
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Gracias por contactarnos!</h4>
+            <p>Muchas gracias por enviarnos el formulario completo con tus datos</p>
+            <hr />
+            <p class="mb-0">En breve nos pondremos en contacto con usted</p>
+        </div>
+        
     </form>
     <br />
     <br />

@@ -19,6 +19,12 @@ namespace WebForm
         protected void btnCorreo_Click(object sender, EventArgs e)
         {
 
+            enviar_Mail();
+
+        }
+        private void enviar_Mail()
+        {
+
             SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587); //dos parametro host y puerto
             //smtp.Credentials = new NetworkCredential("webform.proyecto01@gmail.com", "Webform123");
             smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
@@ -27,11 +33,23 @@ namespace WebForm
             smtp.Credentials = new NetworkCredential("webform.proyecto01@gmail.com", "Webform123");
 
             MailMessage mensaje = new MailMessage();
-            mensaje.From = new MailAddress("webform.proyecto01@gmail.com","Gracias por contactarnos");
-            mensaje.To.Add(new MailAddress(txtEmail.Text)); //aca se pone el mail al cual se va a enviar el correo predefinido 
-            mensaje.Subject = "Mensaje de contacto";
+            mensaje.From = new MailAddress("webform.proyecto01@gmail.com", "Gracias por contactarnos");
+            try
+            {
+                mensaje.To.Add(new MailAddress(txtEmail.Text)); //aca se pone el mail al cual se va a enviar el correo predefinido 
+            }
+            catch (Exception)
+            {
 
-            smtp.Send(mensaje);
+                
+            }
+
+            mensaje.Subject = "Mensaje de contacto";
+            if(!(txtEmail.Text == ""))
+            {
+                smtp.Send(mensaje);
+            }
+            
 
             // Econtre una manera de poder enviar un correo personalizado a un cliente
             // no esta terminado todavia pero funciona
@@ -39,8 +57,6 @@ namespace WebForm
             // solamente tenia que cambiar el orden de smtp.Credentials y ponerlo despues de 
             //smtp.UseDefaultCrendentials porque esto vuelve nulo la credencial
             //Hay que econtrar una manera poder tomar el mail que escriba la persona de un label o textbox lo transforme en texto se reemplace en mensaje.To.Add
-
-
         }
     }
 }
