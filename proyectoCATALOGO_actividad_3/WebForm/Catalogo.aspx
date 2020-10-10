@@ -5,14 +5,15 @@
     <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/150.png" class="d-block w-30" alt="..." style="margin: auto;">
+                <img src="https://images.samsung.com/is/image/samsung/p5/latin/tvs/qled-tv/highlights/2020-qled-tv-f00-highlights-kv-mo-v23.jpg?$ORIGIN_JPG$" class="d-block w-30" alt="..."  height="600px;">
             </div>
             <div class="carousel-item">
-                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/149.png" class="d-block w-30" alt="..." style="margin: auto;">
+                <img src="https://media.playstation.com/is/image/SCEA/playstation-5-immersion-campaign-homepage-marquee-desktop-02-ps5-19aug20-en-us?$native_xl_nt$" class="d-block w-30" alt="..." height="600px">
             </div>
-            <div class="carousel-item">
-                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/148.png" class="d-block w-30" alt="..." style="margin: auto;">
-            </div>
+            <!-- Aca va otra imagen pero no encuentro una adecuada -->
+            <!-- <div class="carousel-item">
+                <img src="" class="d-block w-30" alt="..." style="margin: auto;">
+            </div> -->
         </div>
         <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
