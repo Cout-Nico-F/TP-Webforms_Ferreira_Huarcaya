@@ -28,7 +28,7 @@ namespace WebForm
 
             MailMessage mensaje = new MailMessage();
             mensaje.From = new MailAddress("webform.proyecto01@gmail.com","Gracias por contactarnos");
-            mensaje.To.Add(new MailAddress("webform.proyecto01@gmail.com")); //aca se pone el mail al cual se va a enviar el correo predefinido 
+            mensaje.To.Add(new MailAddress(txtEmail.Text)); //aca se pone el mail al cual se va a enviar el correo predefinido 
             mensaje.Subject = "Mensaje de contacto";
 
             smtp.Send(mensaje);

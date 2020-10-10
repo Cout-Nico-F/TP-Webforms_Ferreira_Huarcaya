@@ -11,8 +11,9 @@
             </div>
 
         <div class="form-group">
-            <label  for="exampleFormControlInput1">Direccion de correo electronico</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="Email">
+            <!-- <label  for="exampleFormControlInput1">Direccion de correo electronico</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="Email"> -->
+            <asp:TextBox ID="txtEmail" runat="server" />
         </div>
 
         <div class="form-group">
