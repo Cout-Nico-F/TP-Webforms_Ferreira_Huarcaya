@@ -19,6 +19,9 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
     <link href="Estilos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 <body style="padding-top: 0px; background-color: gainsboro">
     <form runat="server">

@@ -47,6 +47,7 @@
                     <br />
                     <a href="Detalles.aspx" class="mt-auto btn btn-primary">Ver detalles</a> -->
                     <a class="btn btn-primary" href="Default.aspx" role="button">Agregar al carrito</a>
+                    <i class="material-icons">shopping_cart</i>
                     <br />
                     <a class="btn btn-primary" href="Detalles.aspx" role="button">Ver detalles</a>
                     
