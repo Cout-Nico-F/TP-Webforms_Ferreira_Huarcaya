@@ -44,7 +44,7 @@
                     <p class="card-text">$<%= item.Precio %></p>
                     <a class="btn btn-primary btn-sm" href="Default.aspx" role="button"><i class="material-icons">shopping_cart</i> Agregar al carrito</a>
                     <br />
-                    <a class="btn btn-primary btn-sm" href="Detalles.aspx" role="button"><i class="material-icons">remove_red_eye</i> detalles</a>
+                    <a class="btn btn-primary btn-sm" href="Detalles.aspx?ItemArticulo = <%= item.Id %>" role="button"><i class="material-icons">remove_red_eye</i> detalles</a>
                     
                 </div>
             </div>
