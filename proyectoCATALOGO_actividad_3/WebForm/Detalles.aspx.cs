@@ -25,9 +25,15 @@ namespace WebForm
         }
 
         /// <summary>
-        /// Busca en una lista de articulos dada, el Id ingresado. En ese orden.
-        /// Si no la encuentra retorna un Articulo = null;
+        /// Busca en una lista de articulos dada, el Id ingresado. En ese orden.<para />
+        ///<remarks>
+        /// Si no la encuentra retorna un Articulo con null;
+        /// </remarks>
+        /// para crear documentacion podes ver estos link <see href="http://qbit.com.mx/blog/2012/04/24/etiquetas-para-documentar-codigo-en-c-net/"/><para />
+        /// <see href="https://docs.microsoft.com/en-us/dotnet/csharp/codedoc"/>
         /// </summary>
+        /// <example>
+        /// </example>
         /// <param name="listaArticulos"></param>
         /// <param name="idArticulo"></param>
         /// <returns>Class Modelo.Articulo</returns>
