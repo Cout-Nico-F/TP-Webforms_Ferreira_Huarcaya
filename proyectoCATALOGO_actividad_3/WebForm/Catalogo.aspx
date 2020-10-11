@@ -5,10 +5,10 @@
     <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://images.samsung.com/is/image/samsung/p5/latin/tvs/qled-tv/highlights/2020-qled-tv-f00-highlights-kv-mo-v23.jpg?$ORIGIN_JPG$" class="d-block w-30" alt="..."  height="600px;">
+                <img src="https://images.samsung.com/is/image/samsung/p5/latin/tvs/qled-tv/highlights/2020-qled-tv-f00-highlights-kv-mo-v23.jpg?$ORIGIN_JPG$" class="d-block w-30 imagenes_carousel" alt="..." >
             </div>
             <div class="carousel-item">
-                <img src="https://media.playstation.com/is/image/SCEA/playstation-5-immersion-campaign-homepage-marquee-desktop-02-ps5-19aug20-en-us?$native_xl_nt$" class="d-block w-30" alt="..." height="600px">
+                <img src="https://media.playstation.com/is/image/SCEA/playstation-5-immersion-campaign-homepage-marquee-desktop-02-ps5-19aug20-en-us?$native_xl_nt$" class="d-block w-30 imagenes_carousel" alt="..." ">
             </div>
             <!-- Aca va otra imagen pero no encuentro una adecuada -->
             <!-- <div class="carousel-item">
@@ -30,7 +30,7 @@
         <%foreach (Modelo.Articulo item in lista)
             { %>
         <div class="col-xs-12 col-sm-4 col-md-3" style="margin-bottom: 1vw;">
-            <div class="card text-center h-100" style="width: 26rem; border: dashed; border-color: brown; padding-bottom: 1rem; background-color: white;">
+            <div class="card text-center h-100 textoDiv" >
                 <div class="card-body d-flex flex-column">
                     <%if ((string)item.ImagenUrl == "")
                         {%>
@@ -43,9 +43,6 @@
                     <p class="card-text"><%= item.Marca %></p>
                     <p class="card-text">( <%= item.Descripcion %> )</p>
                     <p class="card-text">$<%= item.Precio %></p>
-                    <!-- <a href="Default.aspx" class="mt-auto btn btn-primary">Quiero uno!</a>
-                    <br />
-                    <a href="Detalles.aspx" class="mt-auto btn btn-primary">Ver detalles</a> -->
                     <a class="btn btn-primary btn-sm" href="Default.aspx" role="button"><i class="material-icons">shopping_cart</i> Agregar al carrito</a>
                     <br />
                     <a class="btn btn-primary btn-sm" href="Detalles.aspx" role="button"><i class="material-icons">remove_red_eye</i> detalles</a>
