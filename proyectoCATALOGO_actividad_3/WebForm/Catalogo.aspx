@@ -46,10 +46,9 @@
                     <!-- <a href="Default.aspx" class="mt-auto btn btn-primary">Quiero uno!</a>
                     <br />
                     <a href="Detalles.aspx" class="mt-auto btn btn-primary">Ver detalles</a> -->
-                    <a class="btn btn-primary" href="Default.aspx" role="button">Agregar al carrito</a>
-                    <i class="material-icons">shopping_cart</i>
+                    <a class="btn btn-primary btn-sm" href="Default.aspx" role="button"><i class="material-icons">shopping_cart</i> Agregar al carrito</a>
                     <br />
-                    <a class="btn btn-primary" href="Detalles.aspx" role="button">Ver detalles</a>
+                    <a class="btn btn-primary btn-sm" href="Detalles.aspx" role="button"><i class="material-icons">remove_red_eye</i> detalles</a>
                     
                 </div>
             </div>
