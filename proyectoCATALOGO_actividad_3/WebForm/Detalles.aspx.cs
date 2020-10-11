@@ -24,6 +24,13 @@ namespace WebForm
             articuloDetalle = Buscar(listaArticulos,idArticulo);
         }
 
+        /// <summary>
+        /// Busca en una lista de articulos dada, el Id ingresado. En ese orden.
+        /// Si no la encuentra retorna un Articulo = null;
+        /// </summary>
+        /// <param name="listaArticulos"></param>
+        /// <param name="idArticulo"></param>
+        /// <returns>Class Modelo.Articulo</returns>
         private Articulo Buscar(List<Articulo> lista , Int32 id )
         {
             foreach (Articulo item in lista)
