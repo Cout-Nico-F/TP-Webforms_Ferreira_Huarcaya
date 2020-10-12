@@ -12,14 +12,15 @@
 
 </head>
 <body class="bodyImage">
-       
+     
 <div class="container col-md-4">
+    <div class="jumbotron" style="width:650px;height:1000px;">
   <h1 class="my-4"><%=articuloDetalle.Nombre %> 
     <small><%=articuloDetalle.Marca %></small>
   </h1>
   <div class="row">
     <div class="col-md-10">
-      <img class="img-thumbnail imagenTransparente" src="<%=articuloDetalle.ImagenUrl%>" alt="Lo sentimos...no encontramos una imagen"/>
+      <img class="img-thumbnail" src="<%=articuloDetalle.ImagenUrl%>" alt="Lo sentimos...no encontramos una imagen"/>
     </div>
     <div class="col-md-4">
       <h3 class="my-3">Descripcion:</h3>
@@ -33,6 +34,7 @@
     <a href="Catalogo.aspx" class="tipoTexto">Volver al catalogo</a>
     <br />
     <br />
+   </div>
     <% /* Esto es para poner aca la imagen de otro articulo con un link hacia su descripcion. lo dejo comentado por si nos animamos a hacerlo DESPUES de los objetivos principales
   <h3 class="my-4">Related Projects</h3>
 

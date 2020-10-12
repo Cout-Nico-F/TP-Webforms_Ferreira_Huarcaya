@@ -15,7 +15,7 @@
     <form id="form1" runat="server">
         <div id="main-container">
             <hr />
-            <table>
+            <table> 
                 <tr>
                     <th>Articulo</th>
                     <th>Cantidad</th>
