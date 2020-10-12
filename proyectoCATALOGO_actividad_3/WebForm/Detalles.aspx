@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 </head>
-<body>
+<body style="background-image: url(https://i.pinimg.com/originals/ab/bd/6c/abbd6ca05c46ec0de9565500f365af56.jpg)">
        
 <div class="container col-md-4">
   <h1 class="my-4"><%=articuloDetalle.Nombre %> 

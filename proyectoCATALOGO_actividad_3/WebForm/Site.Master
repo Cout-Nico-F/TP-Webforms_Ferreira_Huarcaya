@@ -18,12 +18,12 @@
 
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
-    <link href="Estilos.css" rel="stylesheet" />
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
+    <link href="Estilos.css" rel="stylesheet" />
+
 </head>
-<body style="padding-top: 0px; background-color: gainsboro">
+<body style="padding-top: 0px; background-image: url(https://fondosmil.com/fondo/25322.jpg); background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
