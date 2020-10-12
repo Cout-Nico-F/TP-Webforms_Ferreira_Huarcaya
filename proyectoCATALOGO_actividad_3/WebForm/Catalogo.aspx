@@ -42,9 +42,11 @@
                     <p class="card-text"><%= item.Marca %></p>
                     <p class="card-text">( <%= item.Descripcion %> )</p>
                     <p class="card-text">$<%= item.Precio %></p>
+                    <!--debugger <p class="card-text"><%= item.Id %></p> -->
                     <a class="btn btn-primary btn-sm" href="Default.aspx" role="button"><i class="material-icons">shopping_cart</i> Agregar al carrito</a>
                     <br />
-                    <a class="btn btn-primary btn-sm" href="Detalles.aspx?ItemArticulo = <%= item.Id %>" role="button"><i class="material-icons">remove_red_eye</i> detalles</a>
+                    <asp:Button ID="btn_detalles" Text="Detalles" runat="server" />
+                <!--    <a class="btn btn-primary btn-sm" href="Detalles.aspx?idArticulo=<%= item.Id %>" role="button"><i class="material-icons">remove_red_eye</i> detalles</a>  -->
                     
                 </div>
             </div>

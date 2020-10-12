@@ -14,20 +14,22 @@ namespace WebForm
         public int idArticulo;
         ArticulosNegocio negocio = null;
         List<Articulo> listaArticulos = null;
-        Articulo articuloDetalle = null;
+        public Articulo articuloDetalle = null;
         protected void Page_Load(object sender, EventArgs e)
         {
             negocio = new ArticulosNegocio();
-            idArticulo =Convert.ToInt32( Request.QueryString["itemArticulo"] );
+            idArticulo = Convert.ToInt32( Request.QueryString["idArticulo"] );
             listaArticulos = negocio.ListarArticulos();
 
             articuloDetalle = Buscar(listaArticulos,idArticulo);
+            //si bien articuloDetalle podria ser null pasando mal el id, 
+            //no creo que sea buena idea poner un if aca ya que eso no deberia pasar nunca y el error nos serviria de aviso
         }
 
         /// <summary>
         /// Busca en una lista de articulos dada, el Id ingresado. En ese orden.<para />
         ///<remarks>
-        /// Si no la encuentra retorna un Articulo con null;
+        /// Si no la encuentra retorna un Articulo con null;<para />
         /// </remarks>
         /// para crear documentacion podes ver estos link <see href="http://qbit.com.mx/blog/2012/04/24/etiquetas-para-documentar-codigo-en-c-net/"/><para />
         /// <see href="https://docs.microsoft.com/en-us/dotnet/csharp/codedoc"/>
@@ -41,7 +43,7 @@ namespace WebForm
         {
             foreach (Articulo item in lista)
             {
-                if (item.Id.Equals(id))
+                if (item.Id == id)
                 {
                     articuloDetalle = item;
                     return articuloDetalle;
