@@ -26,7 +26,7 @@
             
             <asp:Button ID="btnCorreo" Text="Enviar Correo" runat="server" Onclick ="btnCorreo_Click"/>
         <br />
-        <div class="alert alert-success" role="alert">
+        <div ID="alerta" class="alert alert-success" role="alert">
             <h4 class="alert-heading">Gracias por contactarnos!</h4>
             <p>Muchas gracias por enviarnos el formulario completo con tus datos</p>
             <hr />
@@ -34,6 +34,7 @@
         </div>
         
     </form>
+   
     <br />
     <br />
 
