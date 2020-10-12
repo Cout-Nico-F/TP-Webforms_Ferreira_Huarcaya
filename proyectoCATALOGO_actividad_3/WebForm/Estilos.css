@@ -26,3 +26,7 @@
 .imagen_transparente{
     background-color:rgba(255,0,0,0.0);
 }
+
+.info-slide{
+    padding: 35px 24px 20px;
+}

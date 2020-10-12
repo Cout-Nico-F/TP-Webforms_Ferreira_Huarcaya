@@ -53,8 +53,31 @@
         </a>
     </div>
     <hr />
-    
-      
+    <footer style="background-color:white">
+    <div class="container">
+        <div class="info-slide">
+            <div class="img-container">
+                <i class="material-icons" style="background-color:white;">payment</i>
+                <h1 style="text-align:left; background-color:white">Pagá con tarjeta o en efectivo</h1>
+                <p style="text-align:left; background-color:white">tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
+            </div>
+        </div>
+        <div class="info-slide">
+            <div class="img-container">
+                <i class="material-icons" style="background-color:white;">card_travel</i>
+                <h1 style="text-align:center; background-color:white">Envío gratis</h1>
+                <p style="text-align:center; background-color:white">Tenés envios gratis en miles de productos</p>
+            </div>
+        </div>
+        <div class="info-slide">
+            <div class="img-container">
+                <i class="material-icons" style="background-color:white;">security</i>
+                <h1 style="text-align:right; background-color:white">Seguridad, de principio a fin</h1>
+                <p style="text-align:right; background-color:white">No te gustá? Devolvelo sin problemas,siempre estas protegido</p>
+            </div>
+        </div>
+    </div>
+    </footer>
 
 </asp:Content>
 
