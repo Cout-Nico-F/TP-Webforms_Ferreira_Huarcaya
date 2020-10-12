@@ -8,9 +8,10 @@
     <title> Detalles <%= articuloDetalle.Nombre %> </title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="Estilos_Detalles.css" rel="stylesheet" />
 
 </head>
-<body style="background-image: url(https://i.pinimg.com/originals/ab/bd/6c/abbd6ca05c46ec0de9565500f365af56.jpg)">
+<body class="bodyImage">
        
 <div class="container col-md-4">
   <h1 class="my-4"><%=articuloDetalle.Nombre %> 
@@ -18,7 +19,7 @@
   </h1>
   <div class="row">
     <div class="col-md-10">
-      <img class="img-thumbnail" src="<%=articuloDetalle.ImagenUrl%>" alt=""/>
+      <img class="img-thumbnail imagenTransparente" src="<%=articuloDetalle.ImagenUrl%>" alt="Lo sentimos...no encontramos una imagen"/>
     </div>
     <div class="col-md-4">
       <h3 class="my-3">Descripcion:</h3>
@@ -29,7 +30,7 @@
 
     <a class="btn btn-primary btn-sm" href="Default.aspx" role="button"><i class="material-icons">shopping_cart</i> Agregar al carrito</a>
     <br />
-    <a href="Catalogo.aspx" style="font-style:italic">Volver al catalogo</a>
+    <a href="Catalogo.aspx" class="tipoTexto">Volver al catalogo</a>
     <br />
     <br />
     <% /* Esto es para poner aca la imagen de otro articulo con un link hacia su descripcion. lo dejo comentado por si nos animamos a hacerlo DESPUES de los objetivos principales

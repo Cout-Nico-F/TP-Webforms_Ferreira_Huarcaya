@@ -115,6 +115,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Detalles.aspx" />
     <Content Include="Estilos.css" />
+    <Content Include="Estilos_Detalles.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

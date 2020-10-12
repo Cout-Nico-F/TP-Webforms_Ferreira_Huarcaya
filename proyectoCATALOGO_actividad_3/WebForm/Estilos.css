@@ -22,3 +22,7 @@
 .imagenes_carousel {
     height: 600px;
 }
+
+.imagen_transparente{
+    background-color:rgba(255,0,0,0.0);
+}
