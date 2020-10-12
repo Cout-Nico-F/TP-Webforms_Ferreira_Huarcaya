@@ -10,6 +10,16 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <table>
+                <tr>
+                    <th>Articulo</th>
+                    <th>Cantidad</th>
+                    <th>Precio</th>
+                </tr>
+            </table>
+        </div>
+        <div>
+
         </div>
     </form>
 </body>
