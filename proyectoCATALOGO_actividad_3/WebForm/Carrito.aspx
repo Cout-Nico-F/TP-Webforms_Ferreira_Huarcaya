@@ -16,7 +16,6 @@
         <div id="main-container">
             <hr />
             <table>
-                
                 <tr>
                     <th>Articulo</th>
                     <th>Cantidad</th>
