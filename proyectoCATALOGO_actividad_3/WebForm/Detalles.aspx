@@ -12,7 +12,7 @@
 </head>
 <body>
        
-<div class="container">
+<div class="container col-md-4">
   <h1 class="my-4"><%=articuloDetalle.Nombre %> 
     <small><%=articuloDetalle.Marca %></small>
   </h1>
@@ -28,6 +28,10 @@
   </div>
 
     <a class="btn btn-primary btn-sm" href="Default.aspx" role="button"><i class="material-icons">shopping_cart</i> Agregar al carrito</a>
+    <br />
+    <a href="Catalogo.aspx" style="font-style:italic">Volver al catalogo</a>
+    <br />
+    <br />
     <% /* Esto es para poner aca la imagen de otro articulo con un link hacia su descripcion. lo dejo comentado por si nos animamos a hacerlo DESPUES de los objetivos principales
   <h3 class="my-4">Related Projects</h3>
 
