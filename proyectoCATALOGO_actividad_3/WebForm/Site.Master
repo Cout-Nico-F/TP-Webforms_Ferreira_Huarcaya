@@ -73,7 +73,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - Our ASP.NET Small Catalogue Application</p>
+                <p style="color:slategrey; text-align:right">&copy; <%: DateTime.Now.Year %> - Our ASP.NET Small Catalogue Application</p>
             </footer>
         </div>
 
