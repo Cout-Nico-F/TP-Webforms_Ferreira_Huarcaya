@@ -23,5 +23,10 @@ namespace Modelo
     public Marca Marca { get; set; }
 
     public Categoria Categoria { get; set; }
-  }
+
+        //nuevas propiedades que vamos a usar
+        public Articulo articuloDetalle { get; set; }
+
+        public Articulo itemArticulo { get; set; }
+    }
 }

@@ -31,4 +31,27 @@
     padding: 35px 24px 20px;
 }
 
+/* Buscador de contenido*/
+#ctn-icon-search {
+    position: absolute;
+    right: 20px;
+    height: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+#ctn-bars-search{
+    position:fixed;
+    top:80px;
+    width:100%;
+    background:white;
+    padding:20px;
+}
+#ctn-bars-search input{
+    display:block;
+    width:1200px;
+    margin:auto;
+    padding:10px;
+    font-size:10px;
 
+}

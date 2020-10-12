@@ -2,6 +2,16 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
+                <div id="ctn-bars-search">
+                    <input type="text" id="inputSearch" placeholder="¿Que deseas buscar?"/>
+                </div>
+                <ul id="box-search">
+                    <li><a href="#"> <i class="fas fa-search"></i>SONY</a></li>
+                    <li><a href="#"> <i class="fas fa-search"></i>SAMSUNG</a></li>
+                    <li><a href="#"> <i class="fas fa-search"></i>MOTOROLA</a></li>
+                    <li><a href="#"> <i class="fas fa-search"></i>PLAYSTATION 5</a></li>
+                </ul>
+    <div id="cover-ctn-search"></div>
  
     <div class="row">
         <%foreach (Modelo.Articulo item in lista)

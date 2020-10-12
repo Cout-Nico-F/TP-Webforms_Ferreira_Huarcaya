@@ -22,6 +22,7 @@
 
     <link href="Estilos.css" rel="stylesheet" />
 
+    <script src="https://kit.fontawesome.com/d749d06842.js" crossorigin="anonymous"></script>
 
 </head>
 <body style="padding-top: 0px; background-image: url(https://fondosmil.com/fondo/25322.jpg); background-repeat: no-repeat; background-attachment: fixed; background-position: center;">
@@ -66,7 +67,12 @@
                             <a class="nav-link" href="Contact.aspx">Contactenos</a>
                         </li>
                     </ul>
+                    <div id="ctn-icon-search">
+                         <i class="fas fa-search" style="color:white;" id="icon-search"></i>
+                    </div>
                 </div>
+                
+
                 <!-- <div class="dropdown important">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Categoria</button>

@@ -7,7 +7,8 @@ using Negocios;
 
 namespace WebForm
 {
-    public class Detalles
+   /* public class Detalles
     {
-    }
+       
+    }*/
 }
