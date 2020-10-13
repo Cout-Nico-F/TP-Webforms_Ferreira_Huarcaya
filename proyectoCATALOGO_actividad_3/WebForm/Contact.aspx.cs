@@ -13,7 +13,6 @@ namespace WebForm
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         protected void btnCorreo_Click(object sender, EventArgs e)

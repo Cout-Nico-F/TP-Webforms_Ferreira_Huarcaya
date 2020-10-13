@@ -1,8 +1,10 @@
-﻿body {
-}
-
+﻿
 .bodyImage {
     background-image: url(https://i.pinimg.com/originals/ab/bd/6c/abbd6ca05c46ec0de9565500f365af56.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    /* La imagen se ve diferente segun el tamaño del monitor donde la vemos. en mi mi monitor 24 veo todas las franjas negras mientras que en el 19 solo veo la roja y un pedazito de una negra */
 }
 
 .imagenTransparente {

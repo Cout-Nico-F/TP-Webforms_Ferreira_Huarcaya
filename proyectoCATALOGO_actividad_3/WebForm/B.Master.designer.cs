@@ -11,25 +11,16 @@ namespace WebForm
 {
 
 
-    public partial class Contact
+    public partial class B
     {
 
         /// <summary>
-        /// txtEmail control.
+        /// MainContent control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmail;
-
-        /// <summary>
-        /// btnCorreo control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCorreo;
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
     }
 }
