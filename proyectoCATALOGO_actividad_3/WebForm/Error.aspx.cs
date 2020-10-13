@@ -11,7 +11,10 @@ namespace WebForm
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(Session["ErrorEncontrado"] != null)
+            {
+                lblError.Text = Session["ErrorEncontrado"].ToString();
+            }
         }
     }
 }

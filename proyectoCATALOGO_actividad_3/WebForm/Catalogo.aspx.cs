@@ -16,8 +16,17 @@ namespace WebForm
         protected void Page_Load(object sender, EventArgs e)
         {
             ArticulosNegocio artNeg = new ArticulosNegocio();
-           // Catalogo catalogo = new Catalogo();
-            lista = artNeg.ListarArticulos();
+            try
+            {
+                lista = artNeg.ListarArticulos();
+            }
+            catch (Exception ex)
+            {
+
+                Session.Add("ErrorEncontrado", ex.ToString());
+                Response.Redirect("Error.aspx");
+            }
+           
 
         }
         
