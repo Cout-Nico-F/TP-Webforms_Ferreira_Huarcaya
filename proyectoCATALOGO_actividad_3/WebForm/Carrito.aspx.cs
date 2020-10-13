@@ -15,7 +15,10 @@ namespace WebForm
         public List<Articulo> listaArticulo { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            ArticulosNegocio negocio = new ArticulosNegocio();
+            Articulo seleccion = ((List < Articulo >) Session["listadoArticulos"])[0]; //Del listado quiero el primero
+            lblNombreArticulo.Text = seleccion.Nombre;
+            lblPrecioArticulo.Text = seleccion.Precio.ToString();
+            /*ArticulosNegocio negocio = new ArticulosNegocio();
             try
             {
                 listaArticulo = negocio.ListarArticulos();
@@ -24,7 +27,7 @@ namespace WebForm
             {
                 Session.Add("ErrorEncontrado",ex.ToString());
                 Response.Redirect("Error.aspx");
-            }
+            }*/
         }
     }
 }

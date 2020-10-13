@@ -19,6 +19,7 @@ namespace WebForm
             try
             {
                 lista = artNeg.ListarArticulos();
+                Session.Add("listadoArticulos",lista);
             }
             catch (Exception ex)
             {

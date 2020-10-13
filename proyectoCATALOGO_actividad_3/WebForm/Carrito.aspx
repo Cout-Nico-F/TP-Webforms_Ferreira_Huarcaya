@@ -31,6 +31,11 @@
                     <th>Cantidad</th>
                     <th>Precio</th>
                 </tr>
+                <tr>
+                    <th><asp:Label Text="text" runat="server" ID="lblNombreArticulo" /></th>
+                    <th><asp:Label Text="text" runat="server" ID="lblCantidad"/></th>
+                    <th><asp:Label Text="text" runat="server" ID="lblPrecioArticulo"/></th>
+                </tr>
             </table>
             <hr/>
         </div>
