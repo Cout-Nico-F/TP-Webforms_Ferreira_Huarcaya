@@ -67,24 +67,19 @@
                             <a class="nav-link" href="Contact.aspx">Contactenos</a>
                         </li>
                     </ul>
-                    <div class="float-right">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a class="btn btn-primary float-right" href="Carrito.aspx"><i class="fas fa-cart-plus" style="color:white;"></i>     Carrito de compras</a></li>
+                    <div>
+                        <ul class="navbar-nav ">
+                            <li class="nav-item" ><a class="btn btn-primary" href="Carrito.aspx" ><i class="fas fa-cart-plus" style="color:white;"></i>     Carrito de compras</a></li>
                         </ul>
                     </div>
-                    <div class="float-right">
+                    <div>
                         <ul class="navbar-nav">
-                           <li class="nav-item"><a class="btn btn-primary float-right" href="InicioSesion.aspx"><i class="fas fa-user" style="color:white;"></i>   Iniciar Sesion</a></li>
+                           <li class="nav-item"><a class="btn btn-primary" href="InicioSesion.aspx"><i class="fas fa-user" style="color:white;"></i>   Iniciar Sesion</a></li>
                         </ul>
                     </div>
-                    <!--<div id="ctn-icon-search">
-                        <!-- <button class="btn btn-primary">
-                         <i class="fas fa-cart-plus" style="color:white;" id="icon-search"></i>
-                            </button>
-                        
-                    </div>-->
                 </div>
-                
+
+                <!-- Buscador por Marca y Categoria-->
 
                 <!-- <div class="dropdown important">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
