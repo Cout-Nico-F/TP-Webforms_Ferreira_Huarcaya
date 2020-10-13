@@ -45,13 +45,6 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-          <script>
-
-              function redirigir(){
-                  location.href = "Carrito.aspx";
-                }
-
-          </script>
 
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark" style="border-radius: 0px;">
             <div class="container">
@@ -74,11 +67,17 @@
                             <a class="nav-link" href="Contact.aspx">Contactenos</a>
                         </li>
                     </ul>
-                    <div id="ctn-icon-search">
-                        <button class="btn btn-primary" onclick="redirigir()">
+                    <div class="float-right">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="btn btn-primary float-right" href="Carrito.aspx"><i class="fas fa-cart-plus" style="color:white;"></i>     Carrito de compras</a></li>
+                        </ul>
+                    </div>
+                    <!--<div id="ctn-icon-search">
+                        <!-- <button class="btn btn-primary">
                          <i class="fas fa-cart-plus" style="color:white;" id="icon-search"></i>
                             </button>
-                    </div>
+                        
+                    </div>-->
                 </div>
                 
 
