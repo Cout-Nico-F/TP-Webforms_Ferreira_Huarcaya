@@ -18,11 +18,11 @@ namespace WebForm
         protected void Page_Load(object sender, EventArgs e)
         {
             idArticulos = Convert.ToInt32(Request.QueryString["idArticulo"]);
-            idArticulos = BuscarIdArticulos(listaArticulo,idArticulos);
-            if(idArticulos == -1)
+            //idArticulos = BuscarIdArticulos(listaArticulo,idArticulos);
+            /*if(idArticulos == -1)
             {
                 Response.Redirect("Error.aspx"); //no esta bien hecho no se me ocurre una manera 
-            }
+            }*/
             try
             {
                 Articulo seleccion = ((List<Articulo>)Session["listadoArticulos"])[idArticulos]; //Del listado quiero el primero
@@ -38,7 +38,7 @@ namespace WebForm
             
            
         }
-        private int BuscarIdArticulos(List<Articulo> lista,int id)
+       /* private int BuscarIdArticulos(List<Articulo> lista,int id)
         {
             foreach(Articulo item in lista)
             {
@@ -50,7 +50,7 @@ namespace WebForm
                 
             }
             return -1;
-        }
+        }*/
         
     }
 }
