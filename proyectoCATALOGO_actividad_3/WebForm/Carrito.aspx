@@ -13,7 +13,15 @@
 
 </head>
 
-<body>
+<body> 
+    <!--Boton de seguir comprando -->
+    <div>
+        <ul>
+            <li class="navbar nav-item"><a class="btn btn-primary" href="Catalogo.aspx"><i class="fas fa-backward"></i>    Seguir comprando</a></li>
+        </ul>
+    </div>
+
+    <!-- Grilla para mostar articulos que se agregaron al carrito -->
     <form id="form1" runat="server">
         <div id="main-container">
             <hr />
@@ -24,12 +32,10 @@
                     <th>Precio</th>
                 </tr>
             </table>
-            <hr />
+            <hr/>
         </div>
     </form>
-    <div>  
-       
-    </div>
+    
 </body>
 
 </html>
