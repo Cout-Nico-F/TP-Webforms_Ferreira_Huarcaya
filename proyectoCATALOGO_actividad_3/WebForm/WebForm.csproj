@@ -114,6 +114,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="Detalles.aspx" />
+    <Content Include="Error.aspx" />
     <Content Include="Estilos.css" />
     <Content Include="Estilos_Detalles.css" />
     <Content Include="favicon.ico" />
@@ -196,6 +197,13 @@
     </Compile>
     <Compile Include="Detalles.aspx.designer.cs">
       <DependentUpon>Detalles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
