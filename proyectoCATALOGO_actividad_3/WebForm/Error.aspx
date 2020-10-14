@@ -21,11 +21,11 @@
         }
         .error-message{
             display:flex;
-            flex-direction:column;
+            flex-direction:row;
             align-items:center;
             justify-content:center;
             height:calc(100vh - 100px);
-            width:100px;
+            width:1850px;
         }
         .error-message-container{
             text-align:center;
@@ -34,7 +34,7 @@
         h1{
             font-size:60px;
             text-align:center;
-            flex-direction:column;
+            flex-direction:row;
         }
         .clase{
             font-size:18px;
