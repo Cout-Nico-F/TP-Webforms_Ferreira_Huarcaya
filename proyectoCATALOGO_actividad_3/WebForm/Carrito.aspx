@@ -7,13 +7,11 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Carrito de Compras</title>
-    <link href="Estilos_Carrito.css" rel="stylesheet" />
+   <!-- <link href="Estilos_Carrito.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/d749d06842.js" crossorigin="anonymous"></script>
 
 </head>
-
-<body>
     <!--Boton de seguir comprando -->
     <div>
         <ul>
@@ -36,20 +34,16 @@
     <%--    <!-- Grilla para mostar articulos que se agregaron al carrito -->
     <form id="form1" runat="server">
         <div id="main-container">
-            <hr />
             <table> 
-                <tr>
-                    <th>Articulo</th>
-                    <th>Cantidad</th>
-                    <th>Precio</th>
-                </tr>
-                <tr>
-                    <th><asp:Label Text="text" runat="server" ID="lblNombreArticulo" /></th>
-                    <th><asp:Label Text="text" runat="server" ID="lblCantidad"/></th>
-                    <th><asp:Label Text="text" runat="server" ID="lblPrecioArticulo"/></th>
+                <tr class="clase-tabla">
+                    <th class="clase-tabla"><asp:Label Text="text" runat="server" ID="lblNombreArticulo" /> <br />
+                    <h6 style="color:green">Envio Gratis</h6></th>
+                    <th class="clase-tabla"><a class="btn btn-primary rounded" style="width:20px;height:25px;padding-right:25px;padding-left:10px;padding-bottom:25px;"><i class="fas fa-plus-circle"></i></a><asp:Label style="padding-left:10px;" Text="1" runat="server" ID="lblCantidad"/></th>
+                    <th class="clase-tabla"><asp:Label Text="text" runat="server" ID="lblPrecioArticulo"/></th>
+                    <!-- <th><a class="btn btn-link" href="Catalogo.aspx"><i class="fas fa-cart-arrow-down">     Comprar</i> </a></th> -->
+                    <th class="clase-tabla"><a class="btn btn-link" href="Catalogo.aspx" ><i class="fas fa-trash-alt" style="color:red;"></i></a></th>
                 </tr>
             </table>
-            <hr/>
         </div>
     </form>--%>
 </body>
