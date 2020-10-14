@@ -42,7 +42,7 @@ namespace WebForm
             Session["listaCarrito"] = listaCarrito;
 
 
-
+            //por que me guarda nulls en la lista ademas de los articulos agregados ?
             
 
 

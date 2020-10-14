@@ -7,31 +7,40 @@
 
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Carrito de Compras</title>
-   <!-- <link href="Estilos_Carrito.css" rel="stylesheet" /> -->
+    <!-- <link href="Estilos_Carrito.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/d749d06842.js" crossorigin="anonymous"></script>
 
 </head>
-    <!--Boton de seguir comprando -->
-    <div>
-        <ul>
-            <li class="navbar nav-item"><a class="btn btn-primary" href="Catalogo.aspx"><i class="fas fa-backward"></i>Seguir comprando</a></li>
-        </ul>
-    </div>
+<!--Boton de seguir comprando -->
+<div>
+    <ul>
+        <li class="navbar nav-item"><a class="btn btn-primary" href="Catalogo.aspx"><i class="fas fa-backward"></i>Seguir comprando</a></li>
+    </ul>
+</div>
 
-    <% foreach (var item in listaCarrito )
-        {%>
-    <div class="jumbotron">
-        <h1 class="display-4"><%=item.Nombre %>, <%=item.Marca %></h1>
-        <p class="lead"><%=item.Precio %></p>
-        <hr class="my-4">
-        <p></p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Quitar</a>
-    </div>
+<% foreach (var item in listaCarrito)//aca recorremos la lista y dibujamos 1 jumbotron por cada item agregado al carro.
+    {
+        if (item != null)
+        {
+%><div class="jumbotron">
+    <h1 class="display-2"><%=item.Nombre %>, <%=item.Marca %></h1>
+    <p class="lead"><%=item.Precio %></p>
+    <hr class="my-2">
+    <p></p>
+    <a class="btn btn-primary btn-lg" href="#" role="button">Quitar</a> <% //este boton va a encargarse de borrar el item buscandolo por id en la lista de items y sacandolo de la lista en session %>
+</div>
+<%  }
+    else %>
+<div class="jumbotron">
+    <p>No tenes ningun articulo en tu carrito ? Ahora es buen momento para elegir tu proxima compra!</p>
+    <hr class="my-2">
+    <p></p>
+</div>
+<%;
+    } %>
 
-    <% } %>
-
-    <%--    <!-- Grilla para mostar articulos que se agregaron al carrito -->
+<%--    <!-- Grilla para mostar articulos que se agregaron al carrito -->
     <form id="form1" runat="server">
         <div id="main-container">
             <table> 
