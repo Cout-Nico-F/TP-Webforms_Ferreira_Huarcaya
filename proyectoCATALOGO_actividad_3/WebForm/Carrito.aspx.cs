@@ -18,8 +18,8 @@ namespace WebForm
         private int idArticulo;
         private ArticulosNegocio negocio = null;
         private List<Articulo> listaArticulos = null;
-        private List<Articulo> listaCarrito = null;
-        public Articulo articuloCarrito = null;
+        public List<Articulo> listaCarrito = null;
+        private Articulo articuloCarrito = null;
 
         protected void Page_Load(object sender, EventArgs e)
         {

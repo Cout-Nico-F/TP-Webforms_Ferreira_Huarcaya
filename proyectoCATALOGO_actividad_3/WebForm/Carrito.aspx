@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Carrito de Compras</title>
     <link href="Estilos_Carrito.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
@@ -13,15 +13,27 @@
 
 </head>
 
-<body> 
+<body>
     <!--Boton de seguir comprando -->
     <div>
         <ul>
-            <li class="navbar nav-item"><a class="btn btn-primary" href="Catalogo.aspx"><i class="fas fa-backward"></i>    Seguir comprando</a></li>
+            <li class="navbar nav-item"><a class="btn btn-primary" href="Catalogo.aspx"><i class="fas fa-backward"></i>Seguir comprando</a></li>
         </ul>
     </div>
 
-    <!-- Grilla para mostar articulos que se agregaron al carrito -->
+    <% foreach (var item in listaCarrito )
+        {%>
+    <div class="jumbotron">
+        <h1 class="display-4"><%=item.Nombre %>, <%=item.Marca %></h1>
+        <p class="lead"><%=item.Precio %></p>
+        <hr class="my-4">
+        <p></p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Quitar</a>
+    </div>
+
+    <% } %>
+
+    <%--    <!-- Grilla para mostar articulos que se agregaron al carrito -->
     <form id="form1" runat="server">
         <div id="main-container">
             <hr />
@@ -39,8 +51,7 @@
             </table>
             <hr/>
         </div>
-    </form>
-    
+    </form>--%>
 </body>
 
 </html>
