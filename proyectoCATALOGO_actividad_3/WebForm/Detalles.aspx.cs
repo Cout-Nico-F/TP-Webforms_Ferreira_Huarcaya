@@ -11,9 +11,9 @@ namespace WebForm
 {
     public partial class Detalles : System.Web.UI.Page
     {
-        public int idArticulo;
-        ArticulosNegocio negocio = null;
-        List<Articulo> listaArticulos = null;
+        private int idArticulo;
+        private ArticulosNegocio negocio = null;
+        private List<Articulo> listaArticulos = null;
         public Articulo articuloDetalle = null;
         protected void Page_Load(object sender, EventArgs e)
         {
