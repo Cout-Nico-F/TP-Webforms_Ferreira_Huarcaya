@@ -14,27 +14,29 @@ namespace WebForm
     public partial class WebForm2 : System.Web.UI.Page
 
     {
-        public int idArticulos;
+        public Articulo idArticulos;
         public List<Articulo> listaArticulo { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            idArticulos = Convert.ToInt32(Request.QueryString["idArticulo"]);
-            try
+            if(Session["listadoArticulos"] != null) //para ver si contiene algo
             {
-                Articulo seleccion = ((List<Articulo>)Session["listadoArticulos"])[4]; //Del listado quiero el primero
-                lblNombreArticulo.Text = seleccion.Nombre;
-                lblPrecioArticulo.Text = seleccion.Precio.ToString();
-            }
-            catch (Exception ex)
-            {
+                try
+                {
+                    Articulo seleccion = ((List<Articulo>)Session["listadoArticulos"])[4]; //Del listado quiero el primero
+                    lblNombreArticulo.Text = seleccion.Nombre;
+                    lblPrecioArticulo.Text = seleccion.Precio.ToString();
+                }
+                catch (Exception ex)
+                {
 
-                Session.Add("ErrorEncontrado", ex.ToString());
-                Response.Redirect("Error.aspx");
+                    Session.Add("ErrorEncontrado", ex.ToString());
+                    Response.Redirect("Error.aspx");
+                }
             }
+            
             
            
         }
-       
         
     }
 }
