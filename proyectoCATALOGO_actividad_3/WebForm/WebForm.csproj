@@ -184,7 +184,6 @@
     <Compile Include="B.Master.designer.cs">
       <DependentUpon>B.Master</DependentUpon>
     </Compile>
-    <Compile Include="Catalogo.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
