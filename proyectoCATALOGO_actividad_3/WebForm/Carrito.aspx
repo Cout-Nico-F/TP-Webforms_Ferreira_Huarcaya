@@ -33,8 +33,10 @@
                 </tr>
                 <tr>
                     <th><asp:Label Text="text" runat="server" ID="lblNombreArticulo" /></th>
-                    <th><asp:Label Text="text" runat="server" ID="lblCantidad"/></th>
+                    <th><a class="btn btn-primary rounded" style="width:20px;height:25px;"><i class="fas fa-plus-circle"></i></a><asp:Label Text="1" runat="server" ID="lblCantidad"/></th>
                     <th><asp:Label Text="text" runat="server" ID="lblPrecioArticulo"/></th>
+                    <!-- <th><a class="btn btn-link" href="Catalogo.aspx"><i class="fas fa-cart-arrow-down">     Comprar</i> </a></th> -->
+                    <th><a class="btn btn-link" href="Catalogo.aspx" ><i class="fas fa-trash-alt" style="color:red;"></i></a></th>
                 </tr>
             </table>
             <hr/>
