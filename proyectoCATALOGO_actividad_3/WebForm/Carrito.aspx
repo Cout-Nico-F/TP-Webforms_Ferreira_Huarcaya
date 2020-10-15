@@ -22,22 +22,20 @@
 
 <% foreach (var item in listaCarrito)//aca recorremos la lista y dibujamos 1 jumbotron por cada item agregado al carro.
     {
-    if (item != null)
-      {%>
+        if (item != null )
+        {%>
         <div class="jumbotron">
          <h1 class="display-2"><%=item.Nombre %>, <%=item.Marca %></h1>
          <p class="lead">$<%=item.Precio %></p>
-         <hr class="my-2">
-        <p></p>
+        
+         <hr class="my-2"/><hr />
         <a class="btn btn-primary btn-lg" href="#" role="button">Quitar</a> <% //este boton va a encargarse de borrar el item buscandolo por id en la lista de items y sacandolo de la lista en session %>
         </div>
     <%}
-    else
-    {%>
+        else if(item == null)
+        {%>
          <div class="jumbotron">
          <p>No tenes ningun articulo en tu carrito ? Ahora es buen momento para elegir tu proxima compra!</p>
-         <hr class="my-2">
-        <p></p>
     </div>
     <%}
     } %>

@@ -63,26 +63,105 @@
         </div>
         <% } %>
     </div>
-
+    <style>
+        #footer{
+            background-color:transparent;
+            width:200px;
+            height:auto;
+            color:white;
+        }
+        #pie-footer{
+            background-color:black;
+            width:100px;
+            height:auto;
+        }
+        #titulo-footer{
+            color:white;
+            text-align:center;
+            top:10px;
+        }
+        #tarjeta{
+            font-size:40px;
+            margin-top:0px;
+            font-weight:800;
+            color:white;
+            text-align:center;
+        }
+        #envio{
+            font-size:40px;
+            margin-top:0px;
+            font-weight:800;
+            color:white;
+            text-align:center;
+        }
+        #seguridad{
+            font-size:40px;
+            margin-top:0px;
+            font-weight:800;
+            color:white;
+            text-align:center;
+        }
+    </style>
        
     <hr />
-    <footer style="background-color:white">
+    <div>
+        <div class="container-fluid" id="footer">
+            <div class="row">
+                <div class="col-4" id="tarjeta" >
+                    <p >
+                        <i class="far fa-credit-card"></i>
+                    </p>
+                    <h3>Pagá con tarjeta o en efectivo</h3>
+                    <h6 >
+                        Tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!
+                    </h6>
+                </div>
+                <div class="col-4" id="envio">
+                    <p>
+                        <i class="fas fa-route"></i>
+                    </p>
+                    <h3>Envío gratis</h3>
+                    <h6>Tenés envios gratis en miles de productos</h6>
+                </div>
+                <div class="col-4" id="seguridad">
+                    <p>
+                        <i class="fas fa-shield-alt"></i>
+                    </p>
+                    <h3>Seguridad, de principio a fin</h3>
+                    <h6>No te gustá? Devolvelo sin problemas,siempre estas protegido</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pie-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p id="titulo-footer">
+                        Copyright @2020 All rights reserved for Nicolas Ferreira and Alonso Huarcaya
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--
+    <footer style="background-color:transparent">
     <div class="container">
-        <div class="info-slide">
+        <div class="info-slide" style="background-color:white;padding-left:0px;padding-right:">
             <div class="img-container">
                 <i class="material-icons" style="background-color:white;">payment</i>
                 <h1 style="text-align:left; background-color:white">Pagá con tarjeta o en efectivo</h1>
                 <p style="text-align:left; background-color:white">tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
             </div>
         </div>
-        <div class="info-slide">
+        <div class="info-slide" style="background-color:white">
             <div class="img-container">
                 <i class="material-icons" style="background-color:white;">card_travel</i>
                 <h1 style="text-align:center; background-color:white">Envío gratis</h1>
                 <p style="text-align:center; background-color:white">Tenés envios gratis en miles de productos</p>
             </div>
         </div>
-        <div class="info-slide">
+        <div class="info-slide" style="background-color:white">
             <div class="img-container">
                 <i class="material-icons" style="background-color:white;">security</i>
                 <h1 style="text-align:right; background-color:white">Seguridad, de principio a fin</h1>
@@ -90,7 +169,7 @@
             </div>
         </div>
     </div>
-    </footer>
+    </footer> -->
 
 </asp:Content>
 
