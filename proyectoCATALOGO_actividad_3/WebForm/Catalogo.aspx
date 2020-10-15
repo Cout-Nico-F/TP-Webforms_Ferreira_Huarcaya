@@ -13,7 +13,54 @@
                     <li><a href="#"> <i class="fas fa-search"></i>PLAYSTATION 5</a></li>
                 </ul>
     <div id="cover-ctn-search"></div> -->
-    
+     <style>
+        #footer{
+            background-color:transparent;
+            width:200px;
+            height:auto;
+            color:white;
+        }
+        #pie-footer{
+            background-color:black;
+            width:100px;
+            height:auto;
+        }
+        #titulo-footer{
+            color:white;
+            text-align:center;
+            top:10px;
+        }
+        #tarjeta{
+            font-size:40px;
+            margin-top:0px;
+            font-weight:800;
+            color:white;
+            text-align:center;
+        }
+        #envio{
+            font-size:40px;
+            margin-top:0px;
+            font-weight:800;
+            color:white;
+            text-align:center;
+        }
+        #seguridad{
+            font-size:40px;
+            margin-top:0px;
+            font-weight:800;
+            color:white;
+            text-align:center;
+        }
+        #contador{
+            color:white;
+        }
+    </style>
+    <div id="contador"> 
+     <% Random rnd = new Random();
+    int num = rnd.Next(50,200);%>
+    <h6><i class="fas fa-eye"></i><%=num %></h6>
+     </div>                  
+                
     <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -58,50 +105,14 @@
                     <a class="btn btn-primary btn-sm" href="Carrito.aspx?idArticulo=<%=item.Id %>" role="button"><i class="material-icons">shopping_cart</i> Agregar al carrito</a>
                     <br />
                     <a class="btn btn-primary btn-sm" href="Detalles.aspx?idArticulo=<%= item.Id %>" role="button"><i class="material-icons">remove_red_eye</i> detalles</a>
+            
                 </div>
             </div>
         </div>
         <% } %>
     </div>
-    <style>
-        #footer{
-            background-color:transparent;
-            width:200px;
-            height:auto;
-            color:white;
-        }
-        #pie-footer{
-            background-color:black;
-            width:100px;
-            height:auto;
-        }
-        #titulo-footer{
-            color:white;
-            text-align:center;
-            top:10px;
-        }
-        #tarjeta{
-            font-size:40px;
-            margin-top:0px;
-            font-weight:800;
-            color:white;
-            text-align:center;
-        }
-        #envio{
-            font-size:40px;
-            margin-top:0px;
-            font-weight:800;
-            color:white;
-            text-align:center;
-        }
-        #seguridad{
-            font-size:40px;
-            margin-top:0px;
-            font-weight:800;
-            color:white;
-            text-align:center;
-        }
-    </style>
+    
+   
        
     <hr />
     <div>
@@ -144,6 +155,8 @@
             </div>
         </div>
     </div>
+    <br />
+   
     <!--
     <footer style="background-color:transparent">
     <div class="container">

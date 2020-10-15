@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Negocios;
 using Modelo;
+using System.Configuration;
 
 namespace WebForm
 {
@@ -27,6 +28,7 @@ namespace WebForm
                 Session.Add("ErrorEncontrado", ex.ToString());
                 Response.Redirect("Error.aspx");
             }
+
            
 
         }
