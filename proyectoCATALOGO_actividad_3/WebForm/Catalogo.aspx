@@ -21,7 +21,6 @@
             color:white;
         }
         #pie-footer{
-            background-color:black;
             width:100px;
             height:auto;
         }
@@ -31,28 +30,50 @@
             top:10px;
         }
         #tarjeta{
-            font-size:40px;
+            font-size:90px;
             margin-top:0px;
             font-weight:800;
             color:white;
             text-align:center;
+            position:relative;
+            left:-20px;
+           
         }
         #envio{
-            font-size:40px;
+            font-size:90px;
             margin-top:0px;
             font-weight:800;
             color:white;
             text-align:center;
+            position:relative;
         }
         #seguridad{
-            font-size:40px;
+            font-size:90px;
             margin-top:0px;
             font-weight:800;
             color:white;
             text-align:center;
+            position:relative;
         }
         #contador{
             color:white;
+        }
+        #posicion-tarjeta{
+            position:relative;
+            left:-400px;
+            right:20px;
+            top:250px;
+        }
+        #posicion-travel{
+            position:relative;
+            left:0px;
+            right:0px;
+            top:0px;
+        }
+        #posicion-seguridad{
+            position:relative;
+            top:-210px;
+            left:400px;
         }
     </style>
     <div id="contador"> 
@@ -111,15 +132,12 @@
         </div>
         <% } %>
     </div>
-    
-   
-       
     <hr />
-    <div>
         <div class="container-fluid" id="footer">
-            <div class="row">
-                <div class="col-4" id="tarjeta" >
-                    <p >
+            <div class="row" >
+                <div id="posicion-tarjeta"> 
+                <div id="tarjeta" >
+                    <p>
                         <i class="far fa-credit-card"></i>
                     </p>
                     <h3>Pagá con tarjeta o en efectivo</h3>
@@ -127,23 +145,28 @@
                         Tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!
                     </h6>
                 </div>
-                <div class="col-4" id="envio">
+                    </div>
+                <div id="posicion-travel"> 
+                <div id="envio">
                     <p>
                         <i class="fas fa-route"></i>
                     </p>
                     <h3>Envío gratis</h3>
                     <h6>Tenés envios gratis en miles de productos</h6>
                 </div>
-                <div class="col-4" id="seguridad">
+                    </div>
+                <div id="posicion-seguridad"> 
+                <div id="seguridad">
                     <p>
                         <i class="fas fa-shield-alt"></i>
                     </p>
                     <h3>Seguridad, de principio a fin</h3>
                     <h6>No te gustá? Devolvelo sin problemas,siempre estas protegido</h6>
                 </div>
+              </div>
             </div>
         </div>
-    </div>
+    <hr />
     <div id="pie-footer">
         <div class="container">
             <div class="row">
@@ -156,7 +179,6 @@
         </div>
     </div>
     <br />
-   
     <!--
     <footer style="background-color:transparent">
     <div class="container">
@@ -183,6 +205,5 @@
         </div>
     </div>
     </footer> -->
-
 </asp:Content>
 
