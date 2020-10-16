@@ -7,8 +7,6 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.Ajax.Utilities;
-using Negocios;
-
 
 namespace WebForm
 {
@@ -23,6 +21,29 @@ namespace WebForm
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (listaCarrito == null)
+            {
+                listaCarrito = new List<Articulo>();
+            }
+
+            if (Session["listaCarrito"] == null)
+            {
+                Session.Add("listaCarrito", listaCarrito);
+            }
+
+            if (Request.QueryString["idArticulo"] != null)
+            {
+                AgregarArticulo();
+            }
+            if (Request.QueryString["idArticulo_Borrar"] != null)
+            {
+                QuitarArticulo();
+            }
+            listaCarrito = (List<Articulo>) Session["listaCarrito"];
+        }
+
+        public void AgregarArticulo()
+        {
             negocio = new ArticulosNegocio();
             idArticulo = Convert.ToInt32(Request.QueryString["idArticulo"]);
             listaArticulos = negocio.ListarArticulos();
@@ -30,42 +51,27 @@ namespace WebForm
             articuloCarrito = Buscar(listaArticulos, idArticulo);
 
             //cargar la lista de articulosCarrito desde la session amenos que sea null, entonces creamos la lista vacia.
-            if (Session["listaCarrito"] == null)
-            {
-                listaCarrito = new List<Articulo>();
-                Session.Add("listaCarrito", listaCarrito);
-            }
-            else listaCarrito = (List<Articulo>)Session["listaCarrito"];
+            
+            listaCarrito = (List<Articulo>)Session["listaCarrito"];
 
             listaCarrito.Add(articuloCarrito);
             //guardar la lista de articulosCarrito a la session nuevamente
             Session["listaCarrito"] = listaCarrito;
-
-
-            //por que me guarda nulls en la lista ademas de los articulos agregados ?
-            
-
-
-
-
-
-            //if (Session["listadoArticulos"] != null) //para ver si contiene algo
-            //{
-            //    try
-            //    {
-            //        Articulo seleccion = ((List<Articulo>)Session["listadoArticulos"])[4]; //Del listado quiero el primero
-            //        lblNombreArticulo.Text = seleccion.Nombre;
-            //        lblPrecioArticulo.Text = seleccion.Precio.ToString();
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        Session.Add("ErrorEncontrado", ex.ToString());
-            //        Response.Redirect("Error.aspx");
-            //    }
-            //}
         }
 
-        //por ahora duplico esto. Sin embargo lo mas adecuado seria reutilizar un mismo metodo mas general ( tal vez en articuloNegocio? )
+        public void QuitarArticulo()
+        {
+            negocio = new ArticulosNegocio();
+            idArticulo = Convert.ToInt32(Request.QueryString["idArticulo_Borrar"]);
+            listaArticulos = negocio.ListarArticulos();
+
+            articuloCarrito = Buscar(listaArticulos, idArticulo);
+            listaCarrito = (List<Articulo>)Session["listaCarrito"];
+
+            listaCarrito.Remove(articuloCarrito);
+            //guardar la lista de articulosCarrito a la session nuevamente
+            Session["listaCarrito"] = listaCarrito;
+        }
 
         /// <summary>
         /// Busca en una lista de articulos dada, el Id ingresado. En ese orden.<para />
@@ -91,26 +97,6 @@ namespace WebForm
                 }
             }
             return articuloCarrito;
-        }
-        public void Quitar()
-        {
-            negocio = new ArticulosNegocio();
-            idArticulo = Convert.ToInt32(Request.QueryString["idArticulo"]);
-            listaArticulos = negocio.ListarArticulos();
-
-            articuloCarrito = Buscar(listaArticulos, idArticulo);
-
-            //cargar la lista de articulosCarrito desde la session amenos que sea null, entonces creamos la lista vacia.
-            if (Session["listaCarrito"] == null)
-            {
-                listaCarrito = new List<Articulo>();
-                Session.Remove("listaCarrito");
-            }
-            else listaCarrito = (List<Articulo>)Session["listaCarrito"];
-
-            listaCarrito.Remove(articuloCarrito);
-            //guardar la lista de articulosCarrito a la session nuevamente
-            Session["listaCarrito"] = listaCarrito;
         }
     }
 
