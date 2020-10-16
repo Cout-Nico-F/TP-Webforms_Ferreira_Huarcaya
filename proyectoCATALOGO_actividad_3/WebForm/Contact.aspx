@@ -15,7 +15,7 @@
             <!-- <label  for="exampleFormControlInput1">Direccion de correo electronico</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="Email"> -->
             <asp:Label Text="Correo electronico" runat="server" /><br />
-            <asp:TextBox ID="txtEmail" runat="server" />
+            <asp:TextBox ID="txtEmail" runat="server"/>
         </div>
 
         <div class="form-group">
@@ -23,16 +23,10 @@
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
         </div>
 
-        <!--<button type="submit" class="btn btn-success">Enviar</button> -->
-            
-            <asp:Button ID="btnCorreo" Text="Enviar Correo" runat="server" Onclick ="btnCorreo_Click"/>
+        <button type="submit" class="btn btn-success" onclick="btnCorreo_Click">Enviar</button> 
+
         <br />
-        <!--<div ID="alerta" class="alert alert-success" role="alert">
-            <h4 class="alert-heading">Gracias por contactarnos!</h4>
-            <p>Muchas gracias por enviarnos el formulario completo con tus datos</p>
-            <hr />
-            <p class="mb-0">En breve nos pondremos en contacto con usted</p>
-        </div>-->
+       
     </form>
    </div>
     <br />
