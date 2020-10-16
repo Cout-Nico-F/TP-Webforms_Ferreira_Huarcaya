@@ -1,7 +1,7 @@
 ﻿body {
     margin: 0px;
     font-family: "Muli",sans-serif;
-    background-image: linear-gradient(-225deg,#473878 0%,#3584A7 51%,#30D2BE 100%);
+    background-color: rgb(23, 146, 211 );
 }
 
 h1 {
@@ -22,10 +22,15 @@ h1 {
     color: white;
 }
 
-h1 {
+h2 {
     font-size: 60px;
     text-align: center;
     flex-direction: row;
+}
+h1{
+    font-size:100px;
+    text-align:center;
+    flex-direction:row;
 }
 
 .clase {

@@ -117,6 +117,7 @@
     <Content Include="Error.aspx" />
     <Content Include="Estilos.css" />
     <Content Include="Estilos_Detalles.css" />
+    <Content Include="Estilos_Error.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
