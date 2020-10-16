@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace WebForm
 {
-    public partial class InicioSesion : System.Web.UI.Page
-    {
-        protected void Page_Load(object sender, EventArgs e)
-        {
+	public partial class InicioSesion : System.Web.UI.Page
+	{
+		protected void Page_Load(object sender, EventArgs e)
+		{
 
-        }
-    }
+		}
+	}
 }

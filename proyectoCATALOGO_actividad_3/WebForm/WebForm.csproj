@@ -118,6 +118,7 @@
     <Content Include="Estilos.css" />
     <Content Include="Estilos_Detalles.css" />
     <Content Include="Estilos_Error.css" />
+    <Content Include="Estilos_Inicio.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -133,6 +134,7 @@
     <Content Include="Carrito.aspx" />
     <Content Include="B.Master" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="InicioSesion.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -215,6 +217,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="InicioSesion.aspx.cs">
+      <DependentUpon>InicioSesion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InicioSesion.aspx.designer.cs">
+      <DependentUpon>InicioSesion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
