@@ -90,6 +90,7 @@
 #titulo-footer {
     color: white;
     text-align: center;
+    position:relative; /* Ahora si esta mas centrado*/
     top: 10px;
 }
 
@@ -123,6 +124,9 @@
 
 #contador {
     color: white;
+    position:relative;
+    top:-10px;
+    left:1100px;
 }
 
 #posicion-tarjeta {
