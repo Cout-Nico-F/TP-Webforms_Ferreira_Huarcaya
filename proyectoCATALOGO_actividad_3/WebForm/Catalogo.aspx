@@ -1,24 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/B.Master" AutoEventWireup="true" CodeBehind="Catalogo.aspx.cs" Inherits="WebForm.WebForm1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <!-- Buscador -->
-   <!-- No pude hacer que funcione por ahora-->
-     <!-- <div id="ctn-bars-search">
-                    <input type="text" id="inputSearch" placeholder="¿Que deseas buscar?"/>
-                </div>
-                <ul id="box-search">
-                    <li><a href="#"> <i class="fas fa-search"></i>SONY</a></li>
-                    <li><a href="#"> <i class="fas fa-search"></i>SAMSUNG</a></li>
-                    <li><a href="#"> <i class="fas fa-search"></i>MOTOROLA</a></li>
-                    <li><a href="#"> <i class="fas fa-search"></i>PLAYSTATION 5</a></li>
-                </ul>
-    <div id="cover-ctn-search"></div> -->
-     <style>
-       
-    </style>
+
     <div id="contador"> 
      <% Random rnd = new Random();
-    int num = rnd.Next(50,200);%>
+    int num = rnd.Next(200,1000);%>
     <h6><i class="fas fa-eye"></i><%=num %></h6>
      </div>                  
                 

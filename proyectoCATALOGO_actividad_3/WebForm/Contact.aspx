@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/B.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="WebForm.Contact" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <div style="color:white;"> 
     <h3>Contactanos!</h3>
     <form action="https://formspree.io/f/mwkwvbdb" method="POST">
             <div class="form-group">
@@ -26,19 +27,18 @@
             
             <asp:Button ID="btnCorreo" Text="Enviar Correo" runat="server" Onclick ="btnCorreo_Click"/>
         <br />
-        <div ID="alerta" class="alert alert-success" role="alert">
+        <!--<div ID="alerta" class="alert alert-success" role="alert">
             <h4 class="alert-heading">Gracias por contactarnos!</h4>
             <p>Muchas gracias por enviarnos el formulario completo con tus datos</p>
             <hr />
             <p class="mb-0">En breve nos pondremos en contacto con usted</p>
-        </div>
-        
+        </div>-->
     </form>
-   
+   </div>
     <br />
     <br />
 
-    <div>
+    <div style="color:white;">
         <address>
             Programacion 3 - UTN/FRGP<br />
             Buenos Aires, Argentina<br />
@@ -46,7 +46,7 @@
             0800-PROgramming
         </address>
     </div>
-    <div>
+    <div style="color:white;">
         <address>
             <strong>Soporte:</strong>   <a href="mailto:Support@example.com">Soporte@ejemplo.com</a><br />
             <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@ejemplo.com</a>
