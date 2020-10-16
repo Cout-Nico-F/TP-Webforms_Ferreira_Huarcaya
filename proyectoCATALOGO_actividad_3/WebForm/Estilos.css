@@ -31,6 +31,23 @@
     padding: 35px 24px 20px;
 }
 
+#imagen-samsung {
+    height: 300px;
+    width: 1200px;
+}
+#imagen-sony {
+    height: 300px;
+    width: 1150px;
+}
+#imagen-ps5 {
+    height:370px;
+    width: 1200px;
+}
+#imagen-apple {
+    height: 410px;
+    width: 1200px;
+}
+
 /* Buscador de contenido*/
 #ctn-icon-search {
     position: absolute;
@@ -54,4 +71,73 @@
     padding:10px;
     font-size:10px;
 
+}
+#footer {
+    background-color: transparent;
+    width: 200px;
+    height: auto;
+    color: white;
+}
+
+#pie-footer {
+    width: 100px;
+    height: auto;
+}
+
+#titulo-footer {
+    color: white;
+    text-align: center;
+    top: 10px;
+}
+
+#tarjeta {
+    font-size: 90px;
+    margin-top: 0px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    position: relative;
+    left: -20px;
+}
+
+#envio {
+    font-size: 90px;
+    margin-top: 0px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+#seguridad {
+    font-size: 90px;
+    margin-top: 0px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+#contador {
+    color: white;
+}
+
+#posicion-tarjeta {
+    position: relative;
+    left: -400px;
+    right: 20px;
+    top: 250px;
+}
+
+#posicion-travel {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+#posicion-seguridad {
+    position: relative;
+    top: -210px;
+    left: 400px;
 }

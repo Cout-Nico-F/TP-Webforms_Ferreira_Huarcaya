@@ -14,67 +14,7 @@
                 </ul>
     <div id="cover-ctn-search"></div> -->
      <style>
-        #footer{
-            background-color:transparent;
-            width:200px;
-            height:auto;
-            color:white;
-        }
-        #pie-footer{
-            width:100px;
-            height:auto;
-        }
-        #titulo-footer{
-            color:white;
-            text-align:center;
-            top:10px;
-        }
-        #tarjeta{
-            font-size:90px;
-            margin-top:0px;
-            font-weight:800;
-            color:white;
-            text-align:center;
-            position:relative;
-            left:-20px;
-           
-        }
-        #envio{
-            font-size:90px;
-            margin-top:0px;
-            font-weight:800;
-            color:white;
-            text-align:center;
-            position:relative;
-        }
-        #seguridad{
-            font-size:90px;
-            margin-top:0px;
-            font-weight:800;
-            color:white;
-            text-align:center;
-            position:relative;
-        }
-        #contador{
-            color:white;
-        }
-        #posicion-tarjeta{
-            position:relative;
-            left:-400px;
-            right:20px;
-            top:250px;
-        }
-        #posicion-travel{
-            position:relative;
-            left:0px;
-            right:0px;
-            top:0px;
-        }
-        #posicion-seguridad{
-            position:relative;
-            top:-210px;
-            left:400px;
-        }
+       
     </style>
     <div id="contador"> 
      <% Random rnd = new Random();
@@ -85,14 +25,17 @@
     <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://images.samsung.com/is/image/samsung/p5/latin/tvs/qled-tv/highlights/2020-qled-tv-f00-highlights-kv-mo-v23.jpg?$ORIGIN_JPG$" class="d-block w-30 imagenes_carousel" alt="Samsung QLED 8K" style="height:600px;" >
+                <img src="https://www.soydemac.com/wp-content/uploads/2019/07/Suscripci%C3%B3n_Apple_Music_1_mes.jpg" class="d-block w-30 imagenes_carousel" alt="Apple" id="imagen-apple" >
             </div>
             <div class="carousel-item">
-                <img src="https://media.playstation.com/is/image/SCEA/playstation-5-immersion-campaign-homepage-marquee-desktop-02-ps5-19aug20-en-us?$native_xl_nt$" class="d-block w-30 imagenes_carousel" alt="Image that refers to the power of the PS5 "style="height:600px;">
+                <img src="https://picodotdev.github.io/blog-bitix/2019/06/sobre-la-playstation-4-playstation-5-y-google-stadia/images/ps4_hud09ad69cbefaa90df21dc76903e1fa77_76515_1040x0_resize_q90_box.jpg" class="d-block w-30 imagenes_carousel" alt="Image that refers to the power of the PS5 " id="imagen-ps5">
             </div>
              <div class="carousel-item">
-                <img src="https://media.playstation.com/is/image/SCEA/crash-bandicoot-4-its-about-time-launch-homepage-marquee-desktop-01-ps4-02oct20-en-us?$native_xxl_t$" class="d-block w-30 imagenes_carousel" alt="Crash Bandicoot" style="margin: auto; height:600px;" >
+                <img src="https://www.rugbiers.cl/wp-content/uploads/2017/09/Banner-Sony-Xperia-1200x180.jpg" class="d-block w-30 imagenes_carousel" id="imagen-sony" alt="Sony Make believe"  >
             </div> 
+            <div class="carousel-item"> 
+                <img src="https://img.global.news.samsung.com/co/wp-content/uploads/2019/02/Regional_Galaxy_Banner2_704x160.jpg" class="d-block w-30 imagenes_carousel"alt="samsung" id="imagen-samsung" />
+            </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
