@@ -92,5 +92,26 @@ namespace WebForm
             }
             return articuloCarrito;
         }
+        public void Quitar()
+        {
+            negocio = new ArticulosNegocio();
+            idArticulo = Convert.ToInt32(Request.QueryString["idArticulo"]);
+            listaArticulos = negocio.ListarArticulos();
+
+            articuloCarrito = Buscar(listaArticulos, idArticulo);
+
+            //cargar la lista de articulosCarrito desde la session amenos que sea null, entonces creamos la lista vacia.
+            if (Session["listaCarrito"] == null)
+            {
+                listaCarrito = new List<Articulo>();
+                Session.Remove("listaCarrito");
+            }
+            else listaCarrito = (List<Articulo>)Session["listaCarrito"];
+
+            listaCarrito.Remove(articuloCarrito);
+            //guardar la lista de articulosCarrito a la session nuevamente
+            Session["listaCarrito"] = listaCarrito;
+        }
     }
+
 }
