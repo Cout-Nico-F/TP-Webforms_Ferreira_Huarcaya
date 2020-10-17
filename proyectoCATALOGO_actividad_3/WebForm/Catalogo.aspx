@@ -42,7 +42,7 @@
     <hr />
     <hr />
     <div class="row">
-        <%foreach (Modelo.Articulo item in lista)
+        <%foreach (Modelo.Articulo item in Lista)
             { %>
         <div class="col-xs-12 col-sm-4 col-md-3" style="margin-bottom: 1vw;">
             <div class="card text-center h-100 textoDiv">
