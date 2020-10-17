@@ -15,15 +15,14 @@
                 <section class="error-message-container">
                     <h1>:(</h1>
                     <h2 class="animated bounce"> Lo sentimos...Cometimos un error</h2>
-                    <asp:Label Text="text" runat="server" ID="lblError" CssClass="clase"/>
+                    <asp:Label Text="" runat="server" ID="lblError" CssClass="clase"/>
                 </section>
             </section>
             
         </div>
         <footer class="footer">
-            <a href="/">Terminos de uso</a>
-            <a href="/">Declaracion de Privacidad</a>
-            <a href="/">Centro de ayuda</a>
+            <a href="Catalogo.aspx">Volver al catalogo</a>
+            <a href="Default.aspx">Volver al Home</a>
         </footer>
     </form>
 </body>
