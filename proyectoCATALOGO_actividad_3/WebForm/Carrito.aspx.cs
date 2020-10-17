@@ -79,7 +79,7 @@ namespace WebForm
 
             listaCarrito = (List<Articulo>)Session["listaCarrito"];
 
-            listaCarrito.Remove(listaCarrito.Find(a => idArticulo == a.Id));
+            listaCarrito.Remove(listaCarrito.Find(a => idArticulo == a.Id)); //expresion lambda
 
             //guardar la lista de articulosCarrito a la session nuevamente
             Session["listaCarrito"] = listaCarrito;
