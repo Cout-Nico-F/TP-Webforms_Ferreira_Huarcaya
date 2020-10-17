@@ -18,6 +18,7 @@ namespace WebForm
         private List<Articulo> listaArticulos = null;
         public List<Articulo> listaCarrito = null;
         private Articulo articuloCarrito = null;
+        
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -43,11 +44,17 @@ namespace WebForm
            
             listaCarrito = (List<Articulo>)Session["listaCarrito"];//actualizar la lista desde la session
 
+            decimal suma = 0 ;
+
             foreach (var item in listaCarrito)// por cada item en la lista, sumar su precio con y sin iva por separado.
             {
-                lbl_Subtotal.Text += item.Precio;//está concatenando strings, no sumando numeros. !
+                suma += item.Precio;
+
                 lbl_Total.Text += item.Precio * (decimal)1.19;// el 1.19 es por el 19% de interes que se le aplica a productos tecnologicos
             }
+            lbl_Subtotal.Text = suma.ToString();
+            suma *= (decimal)1.19;
+            lbl_Total.Text = suma.ToString();
         }
 
         public void AgregarArticulo()
