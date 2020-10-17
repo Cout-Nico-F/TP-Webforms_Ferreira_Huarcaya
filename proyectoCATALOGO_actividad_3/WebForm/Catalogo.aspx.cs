@@ -13,7 +13,7 @@ namespace WebForm
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-        public List<Articulo> lista { get; set; }
+        public List<Articulo> Lista { get; set; }
         public Articulo Buscar { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
@@ -21,8 +21,8 @@ namespace WebForm
             ArticulosNegocio artNeg = new ArticulosNegocio();
             try
             {
-                lista = artNeg.ListarArticulos();
-                Session.Add("listadoArticulos", lista); //esto no se esta usando.
+                Lista = artNeg.ListarArticulos();
+                //Session.Add("listadoArticulos", Lista); //esto no se esta usando.
             }
             catch (Exception ex)
             {

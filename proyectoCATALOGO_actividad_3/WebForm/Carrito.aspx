@@ -49,7 +49,7 @@
         <br />
         <div class="jumbotron">
             <h3 style="font-family:Verdana">Subtotal : $<asp:Label ID="lbl_Subtotal" Text="" runat="server" /></h3>
-            <h3 style="font-family:Verdana">Precio Total : $<asp:Label ID="lbl_Total" Text="" runat="server" /></h3>
+            <h3 style="font-family:Verdana">Precio Total + IVA (19%) : $<asp:Label ID="lbl_Total" Text="" runat="server" /></h3>
         </div>
         
     
