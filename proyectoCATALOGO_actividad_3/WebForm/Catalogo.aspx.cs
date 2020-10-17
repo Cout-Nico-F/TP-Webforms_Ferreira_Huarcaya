@@ -22,11 +22,10 @@ namespace WebForm
             try
             {
                 lista = artNeg.ListarArticulos();
-                Session.Add("listadoArticulos", lista);
+                Session.Add("listadoArticulos", lista); //esto no se esta usando.
             }
             catch (Exception ex)
             {
-
                 Session.Add("ErrorEncontrado", ex.ToString());
                 Response.Redirect("Error.aspx");
             }

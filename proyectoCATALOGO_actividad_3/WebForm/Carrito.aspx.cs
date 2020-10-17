@@ -19,10 +19,8 @@ namespace WebForm
         public List<Articulo> listaCarrito = null;
         private Articulo articuloCarrito = null;
         
-
         protected void Page_Load(object sender, EventArgs e)
         {
-           
             if (listaCarrito == null) //si todavia no hay lista, crearla vacia
             {
                 listaCarrito = new List<Articulo>();
@@ -37,6 +35,7 @@ namespace WebForm
             {
                 AgregarArticulo();
             }
+
             if (Request.QueryString["idArticulo_Borrar"] != null)//llegó un parametro de idARticulo_Borrar? borrarlo
             {
                 QuitarArticulo();
@@ -76,7 +75,6 @@ namespace WebForm
 
         public void QuitarArticulo()
         {
-            negocio = new ArticulosNegocio();
             idArticulo = Convert.ToInt32(Request.QueryString["idArticulo_Borrar"]);
 
             listaCarrito = (List<Articulo>)Session["listaCarrito"];

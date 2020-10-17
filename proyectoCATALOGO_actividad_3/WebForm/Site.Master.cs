@@ -9,9 +9,12 @@ namespace WebForm
 {
     public partial class SiteMaster : MasterPage
     {
+        public List<Modelo.Articulo> articulosEnCarrito = null;
+        public string debuger;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            articulosEnCarrito = (List<Modelo.Articulo>)Session["listaCarrito"];
+            debuger = articulosEnCarrito.Count().ToString();
         }
     }
 }
