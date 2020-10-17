@@ -66,8 +66,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="Contact.aspx">Contactenos</a>
                         </li>
-                        <li class="nav-item"><a class="btn btn-primary" href="Carrito.aspx"><i class="fas fa-cart-plus" style="color: white;"></i>Carrito de compras</a></li>
-                        <li class="nav-item"><a class="btn btn-primary" href="InicioSesion.aspx"><i class="fas fa-user" style="color: white;"></i>Iniciar Sesion</a></li>
+                    </ul>
+                    <div style="position:relative;left:570px;">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="btn btn-primary float-right" href="Carrito.aspx"><i class="fas fa-cart-plus" style="color:white;"></i>     Carrito de compra</a></li>
+                        </ul>
+                    </div>
+                    <div style="position:relative;left:580px;">
+                        <ul class="navbar-nav">
+                           <li class="nav-item"><a class="btn btn-primary float-right" href="InicioSesion.aspx"><i class="fas fa-user" style="color:white;"></i>   Iniciar Sesion</a></li>
+                        </ul>
                 </div>
             </div>
 
