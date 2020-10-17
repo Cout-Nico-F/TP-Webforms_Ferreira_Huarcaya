@@ -14,25 +14,25 @@
 <body class="bodyImage">
 
     <div class="container col-md-4">
-            <h1 class="my-4"><%=articuloDetalle.Nombre %>
-                <small><%=articuloDetalle.Marca %></small>
-            </h1>
-            <div class="row">
-                <div class="col-md-10">
-                    <img class="img-thumbnail" src="<%=articuloDetalle.ImagenUrl%>" alt="Lo sentimos...no encontramos una imagen" />
-                </div>
-                <div class="col-md-4">
-                    <h3 class="my-3">Descripcion:</h3>
-                    <p><%=articuloDetalle.Descripcion%></p>
-                    <h3 class="my-3">$<%=articuloDetalle.Precio%></h3>
-                </div>
+        <h1 class="my-4"><%=articuloDetalle.Nombre %>
+            <small><%=articuloDetalle.Marca %></small>
+        </h1>
+        <div class="row">
+            <div class="col-md-10">
+                <img class="img-thumbnail" src="<%=articuloDetalle.ImagenUrl%>" alt="Lo sentimos...no encontramos una imagen" />
             </div>
+            <div class="col-md-4">
+                <h3 class="my-3">Descripcion:</h3>
+                <p><%=articuloDetalle.Descripcion%></p>
+                <h3 class="my-3">$<%=articuloDetalle.Precio%></h3>
+            </div>
+        </div>
 
-            <a class="btn btn-primary btn-sm" href="Default.aspx" role="button"><i class="material-icons">shopping_cart</i> Agregar al carrito</a>
-            <br />
-            <a href="Catalogo.aspx" class="tipoTexto">Volver al catalogo</a>
-            <br />
-            <br />
+        <a class="btn btn-primary btn-sm" href="Default.aspx" role="button"><i class="material-icons">shopping_cart</i> Agregar al carrito</a>
+        <br />
+        <a href="Catalogo.aspx" class="tipoTexto">Volver al catalogo</a>
+        <br />
+        <br />
         <% /* Esto es para poner aca la imagen de otro articulo con un link hacia su descripcion. lo dejo comentado por si nos animamos a hacerlo DESPUES de los objetivos principales
 <h3 class="my-4">Related Projects</h3>
 

@@ -66,16 +66,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="Contact.aspx">Contactenos</a>
                         </li>
-                        <li class="nav-item" ><a class="btn btn-primary" href="Carrito.aspx" ><i class="fas fa-cart-plus" style="color:white;"></i>     Carrito de compras</a></li>
-                           <li class="nav-item"><a class="btn btn-primary" href="InicioSesion.aspx"><i class="fas fa-user" style="color:white;"></i>   Iniciar Sesion</a></li>
-                    </div>
-                  </div>
+                        <li class="nav-item"><a class="btn btn-primary" href="Carrito.aspx"><i class="fas fa-cart-plus" style="color: white;"></i>Carrito de compras</a></li>
+                        <li class="nav-item"><a class="btn btn-primary" href="InicioSesion.aspx"><i class="fas fa-user" style="color: white;"></i>Iniciar Sesion</a></li>
+                </div>
+            </div>
 
 
 
-                <!-- Buscador por Marca y Categoria-->
+            <!-- Buscador por Marca y Categoria-->
 
-                <!-- <div class="dropdown important">
+            <!-- <div class="dropdown important">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Categoria</button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -101,7 +101,7 @@
             </asp:ContentPlaceHolder>
             <hr />
             <footer>
-                <p style="color:slategrey; text-align:right">&copy; <%: DateTime.Now.Year %> - Our ASP.NET Small Catalogue Application</p>
+                <p style="color: slategrey; text-align: right">&copy; <%: DateTime.Now.Year %> - Our ASP.NET Small Catalogue Application</p>
             </footer>
         </div>
 

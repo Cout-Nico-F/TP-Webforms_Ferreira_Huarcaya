@@ -39,7 +39,7 @@ namespace WebForm
             {
                 QuitarArticulo();
             }
-            listaCarrito = (List<Articulo>) Session["listaCarrito"];
+            listaCarrito = (List<Articulo>)Session["listaCarrito"];
         }
 
         public void AgregarArticulo()
@@ -51,7 +51,7 @@ namespace WebForm
             articuloCarrito = Buscar(listaArticulos, idArticulo);
 
             //cargar la lista de articulosCarrito desde la session amenos que sea null, entonces creamos la lista vacia.
-            
+
             listaCarrito = (List<Articulo>)Session["listaCarrito"];
 
             listaCarrito.Add(articuloCarrito);
@@ -66,7 +66,7 @@ namespace WebForm
 
             listaCarrito = (List<Articulo>)Session["listaCarrito"];
 
-            listaCarrito.Remove(listaCarrito.Find( a => idArticulo == a.Id)); 
+            listaCarrito.Remove(listaCarrito.Find(a => idArticulo == a.Id));
 
             //guardar la lista de articulosCarrito a la session nuevamente
             Session["listaCarrito"] = listaCarrito;

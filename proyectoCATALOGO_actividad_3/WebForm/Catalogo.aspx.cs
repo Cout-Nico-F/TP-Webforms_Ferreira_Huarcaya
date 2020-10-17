@@ -22,7 +22,7 @@ namespace WebForm
             try
             {
                 lista = artNeg.ListarArticulos();
-                Session.Add("listadoArticulos",lista);
+                Session.Add("listadoArticulos", lista);
             }
             catch (Exception ex)
             {
@@ -31,7 +31,7 @@ namespace WebForm
                 Response.Redirect("Error.aspx");
             }
 
-           
+
 
         }
 
@@ -46,7 +46,7 @@ namespace WebForm
                 art = Convert.ToInt32(txt_Busqueda.Text);
                 Console.WriteLine(art);
                 Buscar = listaBuscar.Find(x => x.Nombre.ToUpper().Contains(txt_Busqueda.Text.ToUpper()) || x.Marca.Descripcion.Contains(txt_Busqueda.Text.ToUpper()));
-                Session.Add("listadoArticulos",Buscar);
+                Session.Add("listadoArticulos", Buscar);
                 Response.Redirect("Catalogo.aspx?idArticulo=" + Buscar);
 
             }

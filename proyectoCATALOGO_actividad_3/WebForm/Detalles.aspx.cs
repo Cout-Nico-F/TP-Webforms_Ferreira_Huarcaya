@@ -18,10 +18,10 @@ namespace WebForm
         protected void Page_Load(object sender, EventArgs e)
         {
             negocio = new ArticulosNegocio();
-            idArticulo = Convert.ToInt32( Request.QueryString["idArticulo"] );
+            idArticulo = Convert.ToInt32(Request.QueryString["idArticulo"]);
             listaArticulos = negocio.ListarArticulos();
 
-            articuloDetalle = Buscar(listaArticulos,idArticulo);
+            articuloDetalle = Buscar(listaArticulos, idArticulo);
             //si bien articuloDetalle podria ser null pasando mal el id, 
             //no creo que sea buena idea poner un if aca ya que eso no deberia pasar nunca y el error nos serviria de aviso
         }
@@ -39,7 +39,7 @@ namespace WebForm
         /// <param name="listaArticulos"></param>
         /// <param name="idArticulo"></param>
         /// <returns>Class Modelo.Articulo</returns>
-        private Articulo Buscar(List<Articulo> lista , Int32 id )
+        private Articulo Buscar(List<Articulo> lista, Int32 id)
         {
             foreach (Articulo item in lista)
             {

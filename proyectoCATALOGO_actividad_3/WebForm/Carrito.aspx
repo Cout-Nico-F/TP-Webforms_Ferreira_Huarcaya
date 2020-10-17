@@ -12,35 +12,36 @@
     <script src="https://kit.fontawesome.com/d749d06842.js" crossorigin="anonymous"></script>
 
 </head>
-    <body>
-<!--Boton de seguir comprando -->
-<div>
-    <ul>
-        <li class="navbar nav-item"><a class="btn btn-primary" href="Catalogo.aspx"><i class="fas fa-backward"></i>Seguir comprando</a></li>
-    </ul>
-</div>
+<body>
+    <!--Boton de seguir comprando -->
+    <div>
+        <ul>
+            <li class="navbar nav-item"><a class="btn btn-primary" href="Catalogo.aspx"><i class="fas fa-backward"></i>Seguir comprando</a></li>
+        </ul>
+    </div>
 
-<% foreach (var item in listaCarrito)//aca recorremos la lista y dibujamos 1 jumbotron por cada item agregado al carro.
-    {
-        if (item != null)
-        {%>
-        <div class="jumbotron">
-         <h1 class="display-2"><%=item.Nombre %>, <%=item.Marca %></h1>
-         <p class="lead">$<%=item.Precio %></p>
-        
-         <hr class="my-2"/><hr />
-         <a class="btn btn-primary btn-lg" href="Carrito.aspx?idArticulo_Borrar=<%= item.Id %>" role="button" >Quitar</a> <% //este boton va a encargarse de borrar el item buscandolo por id en la lista de items y sacandolo de la lista en session %>
-        </div>
-    <%}
-        else 
-        {%>
-         <div class="jumbotron">
-         <p>No tenes ningun articulo en tu carrito ? Ahora es buen momento para elegir tu proxima compra!</p>
+    <% foreach (var item in listaCarrito)//aca recorremos la lista y dibujamos 1 jumbotron por cada item agregado al carro.
+        {
+            if (item != null)
+            {%>
+    <div class="jumbotron">
+        <h1 class="display-2"><%=item.Nombre %>, <%=item.Marca %></h1>
+        <p class="lead">$<%=item.Precio %></p>
+
+        <hr class="my-2" />
+        <hr />
+        <a class="btn btn-primary btn-lg" href="Carrito.aspx?idArticulo_Borrar=<%= item.Id %>" role="button">Quitar</a> <% //este boton va a encargarse de borrar el item buscandolo por id en la lista de items y sacandolo de la lista en session %>
     </div>
     <%}
-    } %>
+        else
+        {%>
+    <div class="jumbotron">
+        <p>No tenes ningun articulo en tu carrito ? Ahora es buen momento para elegir tu proxima compra!</p>
+    </div>
+    <%}
+        } %>
 
-<%--    <!-- Grilla para mostar articulos que se agregaron al carrito -->
+    <%--    <!-- Grilla para mostar articulos que se agregaron al carrito -->
     <form id="form1" runat="server">
         <div id="main-container">
             <table> 
