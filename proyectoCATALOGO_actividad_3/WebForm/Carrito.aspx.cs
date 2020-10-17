@@ -21,6 +21,7 @@ namespace WebForm
 
         protected void Page_Load(object sender, EventArgs e)
         {
+           
             if (listaCarrito == null)
             {
                 listaCarrito = new List<Articulo>();
@@ -39,7 +40,12 @@ namespace WebForm
             {
                 QuitarArticulo();
             }
+           
+            lbl_Total.Text += articuloCarrito.Precio; //no encuentro el error de porque se reemplazan los valores y no se suman
+            
             listaCarrito = (List<Articulo>)Session["listaCarrito"];
+
+           
         }
 
         public void AgregarArticulo()

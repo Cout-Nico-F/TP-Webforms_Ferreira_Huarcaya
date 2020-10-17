@@ -18,6 +18,10 @@
         <ul>
             <li class="navbar nav-item"><a class="btn btn-primary" href="Catalogo.aspx"><i class="fas fa-backward"></i>Seguir comprando</a></li>
         </ul>
+        <ul>
+            <li>
+                <asp:Label ID="lbl_Fecha" Text="" runat="server" /></li>
+          </ul>
     </div>
 
     <% foreach (var item in listaCarrito)//aca recorremos la lista y dibujamos 1 jumbotron por cada item agregado al carro.
@@ -38,10 +42,17 @@
                 <div class="jumbotron">
                 <p>No tenes ningun articulo en tu carrito? Ahora es buen momento para elegir tu proxima compra!</p>
                 </div>
-             <%}
-        }%>
+             <%}%>
+            
+        <%}%>
+        <br />
+        <div class="jumbotron">
+            <h3 style="font-family:Verdana">Precio Total : <asp:Label ID="lbl_Total" Text="" runat="server" /></h3>
+        </div>
+        
+    
 
-    <%--    <!-- Grilla para mostar articulos que se agregaron al carrito -->
+       <!-- Grilla para mostar articulos que se agregaron al carrito 
     <form id="form1" runat="server">
         <div id="main-container">
             <table> 
@@ -50,12 +61,12 @@
                     <h6 style="color:green">Envio Gratis</h6></th>
                     <th class="clase-tabla"><a class="btn btn-primary rounded" style="width:20px;height:25px;padding-right:25px;padding-left:10px;padding-bottom:25px;"><i class="fas fa-plus-circle"></i></a><asp:Label style="padding-left:10px;" Text="1" runat="server" ID="lblCantidad"/></th>
                     <th class="clase-tabla"><asp:Label Text="text" runat="server" ID="lblPrecioArticulo"/></th>
-                    <!-- <th><a class="btn btn-link" href="Catalogo.aspx"><i class="fas fa-cart-arrow-down">     Comprar</i> </a></th> -->
+                    <!-- <th><a class="btn btn-link" href="Catalogo.aspx"><i class="fas fa-cart-arrow-down">     Comprar</i> </a></th> 
                     <th class="clase-tabla"><a class="btn btn-link" href="Catalogo.aspx" ><i class="fas fa-trash-alt" style="color:red;"></i></a></th>
                 </tr>
             </table>
         </div>
-    </form>--%>
+    </form> -->
 </body>
 
 </html>
