@@ -22,32 +22,32 @@ namespace WebForm
         protected void Page_Load(object sender, EventArgs e)
         {
            
-            if (listaCarrito == null)
+            if (listaCarrito == null) //si todavia no hay lista, crearla vacia
             {
                 listaCarrito = new List<Articulo>();
             }
 
-            if (Session["listaCarrito"] == null)
+            if (Session["listaCarrito"] == null) //si la session todavia no tiene lista, crearla.
             {
                 Session.Add("listaCarrito", listaCarrito);
             }
 
-            if (Request.QueryString["idArticulo"] != null)
+            if (Request.QueryString["idArticulo"] != null)//llegó un parametro de idARticulo? agregarlo
             {
                 AgregarArticulo();
             }
-            if (Request.QueryString["idArticulo_Borrar"] != null)
+            if (Request.QueryString["idArticulo_Borrar"] != null)//llegó un parametro de idARticulo_Borrar? borrarlo
             {
                 QuitarArticulo();
             }
            
-            lbl_Subtotal.Text += articuloCarrito.Precio; 
-            lbl_Total.Text += articuloCarrito.Precio * (decimal)1.19;//no encuentro el error de porque se reemplazan los valores y no se suman
-            // el 1.19 es por el 19% de interes que se le aplica a productos tecnologicos
+            listaCarrito = (List<Articulo>)Session["listaCarrito"];//actualizar la lista desde la session
 
-            listaCarrito = (List<Articulo>)Session["listaCarrito"];
-
-           
+            foreach (var item in listaCarrito)// por cada item en la lista, sumar su precio con y sin iva por separado.
+            {
+                lbl_Subtotal.Text += item.Precio;//está concatenando strings, no sumando numeros. !
+                lbl_Total.Text += item.Precio * (decimal)1.19;// el 1.19 es por el 19% de interes que se le aplica a productos tecnologicos
+            }
         }
 
         public void AgregarArticulo()
