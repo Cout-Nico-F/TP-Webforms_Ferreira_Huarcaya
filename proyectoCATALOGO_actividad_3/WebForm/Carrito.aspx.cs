@@ -68,7 +68,8 @@ namespace WebForm
             articuloCarrito = Buscar(listaArticulos, idArticulo);
             listaCarrito = (List<Articulo>)Session["listaCarrito"];
 
-            listaCarrito.Remove(articuloCarrito);
+            listaCarrito.Remove(articuloCarrito); // El problema esta aca. por alguina razon me devuelve null. como si no encontrara el articulo en la lista.
+
             //guardar la lista de articulosCarrito a la session nuevamente
             Session["listaCarrito"] = listaCarrito;
         }
