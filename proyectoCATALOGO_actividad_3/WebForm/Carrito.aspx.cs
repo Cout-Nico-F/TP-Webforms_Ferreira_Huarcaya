@@ -63,12 +63,10 @@ namespace WebForm
         {
             negocio = new ArticulosNegocio();
             idArticulo = Convert.ToInt32(Request.QueryString["idArticulo_Borrar"]);
-            listaArticulos = negocio.ListarArticulos();
 
-            articuloCarrito = Buscar(listaArticulos, idArticulo);
             listaCarrito = (List<Articulo>)Session["listaCarrito"];
 
-            listaCarrito.Remove(articuloCarrito); // El problema esta aca. por alguina razon me devuelve null. como si no encontrara el articulo en la lista.
+            listaCarrito.Remove(listaCarrito.Find( a => idArticulo == a.Id)); 
 
             //guardar la lista de articulosCarrito a la session nuevamente
             Session["listaCarrito"] = listaCarrito;
