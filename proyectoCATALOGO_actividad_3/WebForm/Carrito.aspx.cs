@@ -41,8 +41,10 @@ namespace WebForm
                 QuitarArticulo();
             }
            
-            lbl_Total.Text += articuloCarrito.Precio; //no encuentro el error de porque se reemplazan los valores y no se suman
-            
+            lbl_Subtotal.Text += articuloCarrito.Precio; 
+            lbl_Total.Text += articuloCarrito.Precio * (decimal)1.19;//no encuentro el error de porque se reemplazan los valores y no se suman
+            // el 1.19 es por el 19% de interes que se le aplica a productos tecnologicos
+
             listaCarrito = (List<Articulo>)Session["listaCarrito"];
 
            

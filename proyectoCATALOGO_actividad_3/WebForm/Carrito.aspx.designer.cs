@@ -24,6 +24,15 @@ namespace WebForm
         protected global::System.Web.UI.WebControls.Label lbl_Fecha;
 
         /// <summary>
+        /// Control lbl_Subtotal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl_Subtotal;
+
+        /// <summary>
         /// Control lbl_Total.
         /// </summary>
         /// <remarks>

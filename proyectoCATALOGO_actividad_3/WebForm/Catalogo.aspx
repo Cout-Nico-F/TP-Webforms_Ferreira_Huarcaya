@@ -3,9 +3,9 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <div>
-        <form action="/" method="post">
-            <asp:TextBox runat="server" ID="txt_Busqueda" />
-            <asp:Button Text="Buscador" runat="server" OnClick="Unnamed_Click" />
+        <form>
+            <!--<asp:TextBox runat="server" ID="txt_Busqueda" />
+            <asp:Button Text="Buscador" runat="server" OnClick="Unnamed_Click" /> -->
         </form>
     </div>
 

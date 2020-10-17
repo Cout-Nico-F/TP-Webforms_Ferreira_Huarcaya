@@ -31,6 +31,7 @@
             <div class="jumbotron">
             <h3><%=item.Nombre %>, <%=item.Marca %></h3>
             <p class="lead">$<%=item.Precio %></p>
+            <p class="lead">Cantidad : 1</p> <!-- Todavia no suma las cantidades pero lo va a hacer -->
 
             <hr class="my-2" />
             <hr />
@@ -47,7 +48,8 @@
         <%}%>
         <br />
         <div class="jumbotron">
-            <h3 style="font-family:Verdana">Precio Total : <asp:Label ID="lbl_Total" Text="" runat="server" /></h3>
+            <h3 style="font-family:Verdana">Subtotal : $<asp:Label ID="lbl_Subtotal" Text="" runat="server" /></h3>
+            <h3 style="font-family:Verdana">Precio Total : $<asp:Label ID="lbl_Total" Text="" runat="server" /></h3>
         </div>
         
     
