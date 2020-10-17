@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Carrito.aspx.cs" Inherits="WebForm.WebForm2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Carrito.aspx.cs" Inherits="WebForm.WebForm2"%>
 
 <!DOCTYPE html>
 
@@ -12,7 +12,7 @@
     <script src="https://kit.fontawesome.com/d749d06842.js" crossorigin="anonymous"></script>
 
 </head>
-<body>
+<body style= " background-image: url(https://www.solofondos.com/wp-content/uploads/2015/11/21omxpw.jpg); background-attachment: fixed; background-position: center;">
     <!--Boton de seguir comprando -->
     <div>
         <ul>
@@ -25,7 +25,7 @@
             if (item != null)
             {%>
             <div class="jumbotron">
-            <h1 class="display-2"><%=item.Nombre %>, <%=item.Marca %></h1>
+            <h3><%=item.Nombre %>, <%=item.Marca %></h3>
             <p class="lead">$<%=item.Precio %></p>
 
             <hr class="my-2" />
@@ -36,7 +36,7 @@
             else
              {%>
                 <div class="jumbotron">
-                <p>No tenes ningun articulo en tu carrito ? Ahora es buen momento para elegir tu proxima compra!</p>
+                <p>No tenes ningun articulo en tu carrito? Ahora es buen momento para elegir tu proxima compra!</p>
                 </div>
              <%}
         }%>
