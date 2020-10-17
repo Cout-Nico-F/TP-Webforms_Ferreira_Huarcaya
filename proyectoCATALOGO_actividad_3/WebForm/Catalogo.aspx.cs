@@ -30,8 +30,6 @@ namespace WebForm
                 Response.Redirect("Error.aspx");
             }
 
-
-
         }
 
         protected void Unnamed_Click(object sender, EventArgs e)

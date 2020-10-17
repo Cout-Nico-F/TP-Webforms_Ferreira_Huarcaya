@@ -10,13 +10,22 @@ namespace WebForm
 {
     public partial class B : System.Web.UI.MasterPage
     {
-        public List<Modelo.Articulo> articulosEnCarrito = null;
+        public List<Modelo.Articulo> listaCarrito = null;
         public string debuger;
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (listaCarrito == null) //si todavia no hay lista, crearla vacia
+            {
+                listaCarrito = new List<Modelo.Articulo>();
+            }
 
-            articulosEnCarrito = (List<Modelo.Articulo>)Session["listaCarrito"];
-            debuger = articulosEnCarrito.Count().ToString();
+            if (Session["listaCarrito"] == null) //si la session todavia no tiene lista, crearla.
+            {
+                Session.Add("listaCarrito", listaCarrito);
+            }
+
+            listaCarrito = (List<Modelo.Articulo>)Session["listaCarrito"];
+            debuger = listaCarrito.Count().ToString();
         }
     }
 }

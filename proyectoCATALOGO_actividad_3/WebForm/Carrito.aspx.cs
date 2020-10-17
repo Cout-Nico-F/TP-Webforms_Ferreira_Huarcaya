@@ -16,14 +16,14 @@ namespace WebForm
         private int idArticulo;
         private ArticulosNegocio negocio = null;
         private List<Articulo> listaArticulos = null;
-        public List<Articulo> listaCarrito = null;
         private Articulo articuloCarrito = null;
-        
+        public List<Articulo> listaCarrito = null;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (listaCarrito == null) //si todavia no hay lista, crearla vacia
             {
-                listaCarrito = new List<Articulo>();
+                listaCarrito = new List<Modelo.Articulo>();
             }
 
             if (Session["listaCarrito"] == null) //si la session todavia no tiene lista, crearla.
