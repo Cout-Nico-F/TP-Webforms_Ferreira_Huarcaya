@@ -28,7 +28,7 @@
             </div>
         </div>
 
-        <a class="btn btn-primary btn-sm" href="Default.aspx" role="button"><i class="material-icons">shopping_cart</i> Agregar al carrito</a>
+        <a class="btn btn-primary btn-sm" href="Carrito.aspx?idArticulo=<%=articuloDetalle.Id %>" role="button"><i class="material-icons">shopping_cart</i> Agregar al carrito</a>
         <br />
         <a href="Catalogo.aspx" class="tipoTexto">Volver al catalogo</a>
         <br />

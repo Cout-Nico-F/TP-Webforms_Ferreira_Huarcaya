@@ -24,22 +24,22 @@
         {
             if (item != null)
             {%>
-    <div class="jumbotron">
-        <h1 class="display-2"><%=item.Nombre %>, <%=item.Marca %></h1>
-        <p class="lead">$<%=item.Precio %></p>
+            <div class="jumbotron">
+            <h1 class="display-2"><%=item.Nombre %>, <%=item.Marca %></h1>
+            <p class="lead">$<%=item.Precio %></p>
 
-        <hr class="my-2" />
-        <hr />
-        <a class="btn btn-primary btn-lg" href="Carrito.aspx?idArticulo_Borrar=<%= item.Id %>" role="button">Quitar</a> <% //este boton va a encargarse de borrar el item buscandolo por id en la lista de items y sacandolo de la lista en session %>
-    </div>
-    <%}
-        else
-        {%>
-    <div class="jumbotron">
-        <p>No tenes ningun articulo en tu carrito ? Ahora es buen momento para elegir tu proxima compra!</p>
-    </div>
-    <%}
-        } %>
+            <hr class="my-2" />
+            <hr />
+            <a class="btn btn-primary btn-lg" href="Carrito.aspx?idArticulo_Borrar=<%= item.Id %>" role="button">Quitar</a> <% //este boton va a encargarse de borrar el item buscandolo por id en la lista de items y sacandolo de la lista en session %>
+            </div>
+            <%}
+            else
+             {%>
+                <div class="jumbotron">
+                <p>No tenes ningun articulo en tu carrito ? Ahora es buen momento para elegir tu proxima compra!</p>
+                </div>
+             <%}
+        }%>
 
     <%--    <!-- Grilla para mostar articulos que se agregaron al carrito -->
     <form id="form1" runat="server">
