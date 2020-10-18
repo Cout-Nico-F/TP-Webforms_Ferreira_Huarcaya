@@ -13,13 +13,13 @@
     <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://gmedia.playstation.com/is/image/SIEPDC/ps5-spiderman-video-thumb-block-8-en-110620?$1600px$" class="d-block w-30 imagenes_carousel" alt="Apple" id="imagen-spiderman">
+                <img src="https://electrodealpro.com/wp-content/uploads/2020/04/playstation-5-muc-gia-499-usd-ra-mat-11-2020-1.jpg" class="d-block w-30 imagenes_carousel" alt="Apple" id="imagen-spiderman">
             </div>
             <div class="carousel-item">
                 <img src="https://www.motorola.com.ar/arquivos/HeaderEdge4.jpg" class="d-block w-30 imagenes_carousel" alt="Image that refers to the power of the PS5 " id="imagen-moto">
             </div>
             <div class="carousel-item">
-                <img src="https://www.xtrafondos.com/wallpapers/resized/samsung-galaxy-m20-montana-color-rosa-6264.jpg?s=large" class="d-block w-30 imagenes_carousel" id="imagen-logoSamsung" alt="Sony Make believe">
+                <img src="https://takate.uy/wp-content/uploads/2020/07/samsung.jpg" class="d-block w-30 imagenes_carousel" id="imagen-logoSamsung" alt="Sony Make believe">
             </div>
             <div class="carousel-item">
                 <img src="https://img.global.news.samsung.com/co/wp-content/uploads/2019/02/Regional_Galaxy_Banner2_704x160.jpg" class="d-block w-30 imagenes_carousel" alt="samsung" id="imagen-samsung" />

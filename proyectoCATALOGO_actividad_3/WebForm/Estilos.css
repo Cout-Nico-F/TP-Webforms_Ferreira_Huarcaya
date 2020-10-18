@@ -20,7 +20,8 @@
 }
 
 .imagenes_carousel {
-    height: 3000px;
+    height: 300px;
+    width: 1200px;
 }
 
 .imagen_transparente{
@@ -29,24 +30,6 @@
 
 .info-slide{
     padding: 35px 24px 20px;
-}
-
-#imagen-samsung {
-    height: 300px;
-    width: 1200px;
-}
-#imagen-logoSamsung {
-    height: 500px;
-    width: 1150px;
-}
-#imagen-moto {
-    height:350px;
-    width: 1200px;
-    background-color:black;
-}
-#imagen-spiderman {
-    height: 600px;
-    width: 1200px;
 }
 
 /* Buscador de contenido*/
