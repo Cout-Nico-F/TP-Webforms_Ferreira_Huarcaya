@@ -6,6 +6,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+
 namespace WebForm
 {
     public partial class B : System.Web.UI.MasterPage
@@ -26,6 +27,11 @@ namespace WebForm
 
             listaCarrito = (List<Modelo.Articulo>)Session["listaCarrito"];
             debuger = listaCarrito.Count().ToString();
+        }
+
+        protected void bnt_Iniciar_Click(object sender, EventArgs e)
+        {
+       
         }
     }
 }
