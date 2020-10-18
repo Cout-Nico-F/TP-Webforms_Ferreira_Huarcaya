@@ -24,11 +24,18 @@
           </ul>
     </div>
 
+            <div class="jumbotron w-75" style="margin-left: 9%">
+            <h3 style="font-family:Verdana">Subtotal : $<asp:Label ID="lbl_Subtotal" Text="" runat="server" /></h3>
+            <h3 style="font-family:Verdana">Precio Total + IVA (19%) : $<asp:Label ID="lbl_Total" Text="" runat="server" /></h3>
+        </div>
+
+
     <% foreach (var item in listaCarrito)//aca recorremos la lista y dibujamos 1 jumbotron por cada item agregado al carro.
         {
             if (item != null)
             {%>
-            <div class="jumbotron">
+            <div class="container d-flex flex">   
+            <div class="jumbotron w-50">
             <h3><%=item.Nombre %>, <%=item.Marca %></h3>
             <p class="lead">$<%=item.Precio %></p>
             <p class="lead">Cantidad : 1</p> <!-- Todavia no suma las cantidades pero lo va a hacer -->
@@ -36,6 +43,7 @@
             <hr class="my-2" />
             <hr />
             <a class="btn btn-primary btn-lg" href="Carrito.aspx?idArticulo_Borrar=<%= item.Id %>" role="button">Quitar</a> <% //este boton va a encargarse de borrar el item buscandolo por id en la lista de items y sacandolo de la lista en session %>
+            </div>
             </div>
             <%}
                 else
@@ -47,10 +55,6 @@
             
             <%}%>
         <br />
-        <div class="jumbotron">
-            <h3 style="font-family:Verdana">Subtotal : $<asp:Label ID="lbl_Subtotal" Text="" runat="server" /></h3>
-            <h3 style="font-family:Verdana">Precio Total + IVA (19%) : $<asp:Label ID="lbl_Total" Text="" runat="server" /></h3>
-        </div>
 </body>
 
 </html>
