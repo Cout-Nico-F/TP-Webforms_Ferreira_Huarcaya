@@ -15,14 +15,16 @@ namespace WebForm
         {
         }
 
-        protected void btnCorreo_Click(object sender, EventArgs e)
+        protected void BtnCorreo_Click(object sender, EventArgs e)
         {
 
-            enviar_Mail();
-
-        }
-        private void enviar_Mail()
-        {
+            string body =
+         "<body>" +
+              "<h1>Bienvenido a E-commerce de Nicolas y Alonso</h1>" +
+              "<h4>Estanis Agradecidos</h4>" +
+              "<span>Estamos muy agredecidos que eliga nuestra plataforma para realizar sus compras online</span>" +
+              "<span>Muchas gracias por su confianza prometemos no decepcionarlo</span>" +
+          "</body>";
 
             SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587); //dos parametro host y puerto
             //smtp.Credentials = new NetworkCredential("webform.proyecto01@gmail.com", "Webform123");
@@ -33,22 +35,29 @@ namespace WebForm
 
             MailMessage mensaje = new MailMessage();
             mensaje.From = new MailAddress("webform.proyecto01@gmail.com", "Gracias por contactarnos");
-            try
-            {
-                mensaje.To.Add(new MailAddress(txtEmail.Text)); //aca se pone el mail al cual se va a enviar el correo predefinido 
-            }
-            catch (Exception)
-            {
-
-                
-            }
-
+            mensaje.To.Add(new MailAddress(txtEmail.Text));
             mensaje.Subject = "Mensaje de contacto";
-            if(!(txtEmail.Text == ""))
-            {
-                smtp.Send(mensaje);
-            }
-            
+            mensaje.IsBodyHtml = true;
+            mensaje.Body = body;
+
+            smtp.Send(mensaje);
+
+            /* try
+             {
+                 mensaje.To.Add(new MailAddress(txtEmail.Text)); //aca se pone el mail al cual se va a enviar el correo predefinido 
+             }
+             catch (Exception)
+             {
+                 Response.Redirect("Error.aspx");
+
+             }
+
+             mensaje.Subject = "Mensaje de contacto";
+             if(!(txtEmail.Text == ""))
+             {
+                 smtp.Send(mensaje); 
+             }*/
+
 
             // Econtre una manera de poder enviar un correo personalizado a un cliente
             // no esta terminado todavia pero funciona
@@ -57,5 +66,9 @@ namespace WebForm
             //smtp.UseDefaultCrendentials porque esto vuelve nulo la credencial
             //Hay que econtrar una manera poder tomar el mail que escriba la persona de un label o textbox lo transforme en texto se reemplace en mensaje.To.Add
         }
+
+
+
+    
     }
 }
