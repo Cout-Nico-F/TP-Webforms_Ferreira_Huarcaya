@@ -35,16 +35,17 @@
     height: 300px;
     width: 1200px;
 }
-#imagen-sony {
-    height: 300px;
+#imagen-logoSamsung {
+    height: 500px;
     width: 1150px;
 }
-#imagen-ps5 {
-    height:370px;
+#imagen-moto {
+    height:350px;
     width: 1200px;
+    background-color:black;
 }
-#imagen-apple {
-    height: 410px;
+#imagen-spiderman {
+    height: 600px;
     width: 1200px;
 }
 

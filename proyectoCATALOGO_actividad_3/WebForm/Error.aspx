@@ -23,6 +23,7 @@
         <footer class="footer">
             <a href="Catalogo.aspx">Volver al catalogo</a>
             <a href="Default.aspx">Volver al Home</a>
+            <a href="javascript:history.back()">Volver atras</a>
         </footer>
     </form>
 </body>

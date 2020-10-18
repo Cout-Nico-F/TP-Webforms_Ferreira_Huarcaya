@@ -35,28 +35,30 @@ namespace WebForm
 
             MailMessage mensaje = new MailMessage();
             mensaje.From = new MailAddress("webform.proyecto01@gmail.com", "Gracias por contactarnos");
-            mensaje.To.Add(new MailAddress(txtEmail.Text));
+            
+            try
+            {   
+                if(!(txtEmail.Text == ""))
+                {
+                    mensaje.To.Add(new MailAddress(txtEmail.Text));
+                }
+                else
+                {
+                    Response.Redirect("Error.aspx");
+                }
+                
+            }
+            catch ( Exception )
+            {
+
+                Response.Redirect("Error.aspx");
+            }
             mensaje.Subject = "Mensaje de contacto";
             mensaje.IsBodyHtml = true;
             mensaje.Body = body;
 
             smtp.Send(mensaje);
 
-            /* try
-             {
-                 mensaje.To.Add(new MailAddress(txtEmail.Text)); //aca se pone el mail al cual se va a enviar el correo predefinido 
-             }
-             catch (Exception)
-             {
-                 Response.Redirect("Error.aspx");
-
-             }
-
-             mensaje.Subject = "Mensaje de contacto";
-             if(!(txtEmail.Text == ""))
-             {
-                 smtp.Send(mensaje); 
-             }*/
 
 
             // Econtre una manera de poder enviar un correo personalizado a un cliente

@@ -13,13 +13,13 @@
     <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="https://www.soydemac.com/wp-content/uploads/2019/07/Suscripci%C3%B3n_Apple_Music_1_mes.jpg" class="d-block w-30 imagenes_carousel" alt="Apple" id="imagen-apple">
+                <img src="https://gmedia.playstation.com/is/image/SIEPDC/ps5-spiderman-video-thumb-block-8-en-110620?$1600px$" class="d-block w-30 imagenes_carousel" alt="Apple" id="imagen-spiderman">
             </div>
             <div class="carousel-item">
-                <img src="https://picodotdev.github.io/blog-bitix/2019/06/sobre-la-playstation-4-playstation-5-y-google-stadia/images/ps4_hud09ad69cbefaa90df21dc76903e1fa77_76515_1040x0_resize_q90_box.jpg" class="d-block w-30 imagenes_carousel" alt="Image that refers to the power of the PS5 " id="imagen-ps5">
+                <img src="https://www.motorola.com.ar/arquivos/HeaderEdge4.jpg" class="d-block w-30 imagenes_carousel" alt="Image that refers to the power of the PS5 " id="imagen-moto">
             </div>
             <div class="carousel-item">
-                <img src="https://www.rugbiers.cl/wp-content/uploads/2017/09/Banner-Sony-Xperia-1200x180.jpg" class="d-block w-30 imagenes_carousel" id="imagen-sony" alt="Sony Make believe">
+                <img src="https://www.xtrafondos.com/wallpapers/resized/samsung-galaxy-m20-montana-color-rosa-6264.jpg?s=large" class="d-block w-30 imagenes_carousel" id="imagen-logoSamsung" alt="Sony Make believe">
             </div>
             <div class="carousel-item">
                 <img src="https://img.global.news.samsung.com/co/wp-content/uploads/2019/02/Regional_Galaxy_Banner2_704x160.jpg" class="d-block w-30 imagenes_carousel" alt="samsung" id="imagen-samsung" />
