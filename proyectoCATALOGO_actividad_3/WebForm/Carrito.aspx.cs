@@ -48,8 +48,6 @@ namespace WebForm
             foreach (var item in listaCarrito)// por cada item en la lista, sumar su precio con y sin iva por separado.
             {
                 suma += item.Precio;
-
-                lbl_Total.Text += item.Precio * (decimal)1.19;// el 1.19 es por el 19% de interes que se le aplica a productos tecnologicos
             }
             lbl_Subtotal.Text = suma.ToString("N2");
             suma *= (decimal)1.19;

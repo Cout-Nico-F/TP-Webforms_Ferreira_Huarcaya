@@ -38,14 +38,14 @@
             <a class="btn btn-primary btn-lg" href="Carrito.aspx?idArticulo_Borrar=<%= item.Id %>" role="button">Quitar</a> <% //este boton va a encargarse de borrar el item buscandolo por id en la lista de items y sacandolo de la lista en session %>
             </div>
             <%}
-            else
-             {%>
+                else
+                {%>
                 <div class="jumbotron">
                 <p>No tenes ningun articulo en tu carrito? Ahora es buen momento para elegir tu proxima compra!</p>
                 </div>
-             <%}%>
+              <%}%>
             
-        <%}%>
+            <%}%>
         <br />
         <div class="jumbotron">
             <h3 style="font-family:Verdana">Subtotal : $<asp:Label ID="lbl_Subtotal" Text="" runat="server" /></h3>

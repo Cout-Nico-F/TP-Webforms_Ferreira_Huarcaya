@@ -2,19 +2,14 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <div>
-        <form>
-            <!--<asp:TextBox runat="server" ID="txt_Busqueda" />
-            <asp:Button Text="Buscador" runat="server" OnClick="Unnamed_Click" /> -->
-        </form>
-    </div>
 
     <div id="contador">
         <% Random rnd = new Random();
             int num = rnd.Next(200, 1000);%>
         <h6><i class="fas fa-eye"></i><%=num %></h6>
+        <asp:TextBox runat="server" class="form-text" ID="txt_buscar" style="color:black"/>  
+        <asp:Button Text="text" runat="server" class="btn btn-primary btn-lg active" OnClick="Btn_buscar_Click" ID="btn_buscar" />
     </div>
-
     <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -42,7 +37,13 @@
     <hr />
     <hr />
     <div class="row">
-        <%foreach (Modelo.Articulo item in Lista)
+        <%
+            if (Lista.Count == 0)
+            {%>
+                <h3 style="color:white; margin-left: 1vw; ">No hay articulos que coincidan con tu busqueda.</h3>
+            <%}
+            
+            foreach (Modelo.Articulo item in Lista)
             { %>
         <div class="col-xs-12 col-sm-4 col-md-3" style="margin-bottom: 1vw;">
             <div class="card text-center h-100 textoDiv">

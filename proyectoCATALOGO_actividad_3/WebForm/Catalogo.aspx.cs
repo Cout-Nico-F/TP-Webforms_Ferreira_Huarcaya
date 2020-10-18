@@ -21,7 +21,15 @@ namespace WebForm
             ArticulosNegocio artNeg = new ArticulosNegocio();
             try
             {
-                Lista = artNeg.ListarArticulos();
+                if (Session["listaBuscados"] == null)
+                {
+                    Lista = artNeg.ListarArticulos();
+                }
+                else
+                {
+                    Lista = (List<Articulo>)Session["listaBuscados"];
+                    Session["listaBuscados"] = null;
+                }
                 //Session.Add("listadoArticulos", Lista); //esto no se esta usando.
             }
             catch (Exception ex)
@@ -32,26 +40,23 @@ namespace WebForm
 
         }
 
-        protected void Unnamed_Click(object sender, EventArgs e)
+        protected void Btn_buscar_Click(object sender, EventArgs e)
         {
-            ArticulosNegocio negocio = new ArticulosNegocio();
-            List<Articulo> listaBuscar;
-            int art;
-            try
+            List<Articulo> listaBuscar = new List<Articulo>();
+            if (Session["listaBuscados"] == null)
             {
-                listaBuscar = negocio.ListarArticulos();
-                art = Convert.ToInt32(txt_Busqueda.Text);
-                Console.WriteLine(art);
-                Buscar = listaBuscar.Find(x => x.Nombre.ToUpper().Contains(txt_Busqueda.Text.ToUpper()) || x.Marca.Descripcion.Contains(txt_Busqueda.Text.ToUpper()));
-                Session.Add("listadoArticulos", Buscar);
-                Response.Redirect("Catalogo.aspx?idArticulo=" + Buscar);
-
+                Session.Add("listaBuscados", listaBuscar);
             }
-            catch (Exception ex)
-            {
 
-                Response.Redirect("Error.aspx");
-            }
+            listaBuscar = Lista;
+            listaBuscar = Lista.FindAll(
+                x => x.Categoria.Descripcion.ToUpper().Contains(txt_buscar.Text.ToUpper()) ||
+                x.Descripcion.ToUpper().Contains(txt_buscar.Text.ToUpper()) ||
+                x.Marca.Descripcion.ToUpper().Contains(txt_buscar.Text.ToUpper()) ||
+                x.Nombre.ToUpper().Contains(txt_buscar.Text.ToUpper())
+                );
+            Session["listaBuscados"] = listaBuscar;
+            Response.Redirect("Catalogo.aspx");
         }
     }
 }
