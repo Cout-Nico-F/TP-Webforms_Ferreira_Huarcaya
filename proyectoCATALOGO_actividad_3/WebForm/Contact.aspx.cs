@@ -21,8 +21,8 @@ namespace WebForm
             string body =
          "<body>" +
               "<h1>Bienvenido a E-commerce de Nicolas y Alonso</h1>" +
-              "<h4>Estanis Agradecidos</h4>" +
-              "<span>Estamos muy agredecidos que eliga nuestra plataforma para realizar sus compras online</span>" +
+              "<h4>Estamos Agradecidos</h4>" +
+              "<span>Estamos muy agredecidos que eliga nuestra plataforma para realizar sus compras online</span> <br/>" +
               "<span>Muchas gracias por su confianza prometemos no decepcionarlo</span>" +
           "</body>";
 
