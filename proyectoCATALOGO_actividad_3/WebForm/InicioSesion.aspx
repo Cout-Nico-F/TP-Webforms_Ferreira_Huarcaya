@@ -21,7 +21,7 @@
     <script src="https://kit.fontawesome.com/d749d06842.js" crossorigin="anonymous"></script>
 
 </head>
-<body style="background-color:black;">
+<body style="background-color:black;background-image:url(https://allegra.flowersetcfresno.com/pic/5564165_full-fondos-de-pantalla-de-age-of-empires-2-hd-age-of-empires-ii-definitive-edition-para-pc-analisis-review.jpeg);">
     <div class="modal-dialog text-center" id="posicion-form" style="position:relative;top:300px;">
         <div class="col-sm-8 main-section">
             <div class="modal-content">
