@@ -7,8 +7,8 @@
         <% Random rnd = new Random();
             int num = rnd.Next(200, 1000);%>
         <h6><i class="fas fa-eye"></i><%=num %></h6>
-        <asp:TextBox runat="server" class="form-text" ID="txt_buscar" style="color:black"/>  
-        <asp:Button Text="text" runat="server" class="btn btn-primary btn-lg active" OnClick="Btn_buscar_Click" ID="btn_buscar" />
+        <asp:TextBox runat="server" class="form-text" ID="txt_buscar" style="color:black;position:relative;left:-1100px;width:1000px;" Text="Search..."/>  
+        <asp:Button Text="Buscar" runat="server" class="btn btn-primary btn-lg active" OnClick="Btn_buscar_Click" ID="btn_buscar" style="position:relative;top:-35px;left:-800px;"/>
     </div>
     <div id="carouselExampleFade" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
