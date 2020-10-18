@@ -78,31 +78,6 @@
                         </ul>
                 </div>
             </div>
-
-
-
-            <!-- Buscador por Marca y Categoria-->
-
-            <!-- <div class="dropdown important">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Categoria</button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Samsung</a>
-                        <a class="dropdown-item" href="#">Sony</a>
-                        <a class="dropdown-item" href="#">Motorola</a>
-                        <a class="dropdown-item" href="#">Apple</a>
-                    </div>
-                </div>
-                <div class="dropdown important">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Marca</button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Samsung</a>
-                        <a class="dropdown-item" href="#">Sony</a>
-                        <a class="dropdown-item" href="#">Motorola</a>
-                        <a class="dropdown-item" href="#">Apple</a>
-                    </div>
-                </div>-->
         </nav>
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">

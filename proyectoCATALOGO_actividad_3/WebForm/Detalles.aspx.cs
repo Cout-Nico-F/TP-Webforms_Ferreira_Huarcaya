@@ -22,8 +22,6 @@ namespace WebForm
             listaArticulos = negocio.ListarArticulos();
 
             articuloDetalle = Buscar(listaArticulos, idArticulo);
-            //si bien articuloDetalle podria ser null pasando mal el id, 
-            //no creo que sea buena idea poner un if aca ya que eso no deberia pasar nunca y el error nos serviria de aviso
         }
 
         /// <summary>

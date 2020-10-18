@@ -77,35 +77,7 @@
                            <li class="nav-item"><a class="btn btn-primary float-right" href="InicioSesion.aspx"><i class="fas fa-user" style="color:white;"></i>   Iniciar Sesion</a></li>
                         </ul>
                     </div>
-                    <!--<div id="ctn-icon-search">
-                        <!-- <button class="btn btn-primary">
-                         <i class="fas fa-cart-plus" style="color:white;" id="icon-search"></i>
-                            </button>
-                        
-                    </div>-->
                 </div>
-                
-
-                <!-- <div class="dropdown important">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Categoria</button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Samsung</a>
-                        <a class="dropdown-item" href="#">Sony</a>
-                        <a class="dropdown-item" href="#">Motorola</a>
-                        <a class="dropdown-item" href="#">Apple</a>
-                    </div>
-                </div>
-                <div class="dropdown important">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Marca</button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Samsung</a>
-                        <a class="dropdown-item" href="#">Sony</a>
-                        <a class="dropdown-item" href="#">Motorola</a>
-                        <a class="dropdown-item" href="#">Apple</a>
-                    </div>
-                </div>-->
             </div>
         </nav>
         <div class="container body-content">

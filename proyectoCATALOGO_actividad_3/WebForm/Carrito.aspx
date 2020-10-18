@@ -51,24 +51,6 @@
             <h3 style="font-family:Verdana">Subtotal : $<asp:Label ID="lbl_Subtotal" Text="" runat="server" /></h3>
             <h3 style="font-family:Verdana">Precio Total + IVA (19%) : $<asp:Label ID="lbl_Total" Text="" runat="server" /></h3>
         </div>
-        
-    
-
-       <!-- Grilla para mostar articulos que se agregaron al carrito 
-    <form id="form1" runat="server">
-        <div id="main-container">
-            <table> 
-                <tr class="clase-tabla">
-                    <th class="clase-tabla"><asp:Label Text="text" runat="server" ID="lblNombreArticulo" /> <br />
-                    <h6 style="color:green">Envio Gratis</h6></th>
-                    <th class="clase-tabla"><a class="btn btn-primary rounded" style="width:20px;height:25px;padding-right:25px;padding-left:10px;padding-bottom:25px;"><i class="fas fa-plus-circle"></i></a><asp:Label style="padding-left:10px;" Text="1" runat="server" ID="lblCantidad"/></th>
-                    <th class="clase-tabla"><asp:Label Text="text" runat="server" ID="lblPrecioArticulo"/></th>
-                    <!-- <th><a class="btn btn-link" href="Catalogo.aspx"><i class="fas fa-cart-arrow-down">     Comprar</i> </a></th> 
-                    <th class="clase-tabla"><a class="btn btn-link" href="Catalogo.aspx" ><i class="fas fa-trash-alt" style="color:red;"></i></a></th>
-                </tr>
-            </table>
-        </div>
-    </form> -->
 </body>
 
 </html>
