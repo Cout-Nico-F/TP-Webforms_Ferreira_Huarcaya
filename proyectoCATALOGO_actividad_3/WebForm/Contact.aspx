@@ -1,5 +1,7 @@
 ﻿<%@ Page Title="Contact" Language="C#" MasterPageFile="~/B.Master" AutoEventWireup="true" CodeBehind="Contact.aspx.cs" Inherits="WebForm.Contact" %>
 
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <div style="color:white;"> 
     <h3>Contactanos!</h3>
@@ -14,9 +16,17 @@
         <div class="form-group">
             <!-- <label  for="exampleFormControlInput1">Direccion de correo electronico</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="Email"> -->
+            <!--<asp:ScriptManager ID="smEmail" runat="server"></asp:ScriptManager>-->
+            <asp:ScriptManagerProxy ID="smpEmail" runat="server"></asp:ScriptManagerProxy>
+            <!--Error: System.InvalidOperationException: Sólo se puede agregar una instancia de ScriptManager a la página 
+              No funcionan las soluciones que encontre en internet supongo que como las dos masters utilizan scriptmanager hay algun 
+              -->
             <asp:Label Text="Correo electronico" runat="server" /><br />
             <asp:TextBox ID="txtEmail" runat="server" style="color:black;width:300px;" Placeholder="MaxiSaar_AOE@gmail.com" MaxLength="30" TextMode="Email" />
+            <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ErrorMessage="Campo Obligatorio" ControlToValidate="txtEmail"></asp:RequiredFieldValidator>
+            <ajaxToolkit:ValidatorCalloutExtender ID="vce_rfcEmail" runat="server" TargetControlID="rfvEmail"></ajaxToolkit:ValidatorCalloutExtender>
         </div>
+        
 
         <div class="form-group">
             <label for="exampleFormControlTextarea1">Comentarios</label>
