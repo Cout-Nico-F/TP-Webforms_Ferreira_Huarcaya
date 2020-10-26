@@ -15,7 +15,7 @@
             <!-- <label  for="exampleFormControlInput1">Direccion de correo electronico</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="Email"> -->
             <asp:Label Text="Correo electronico" runat="server" /><br />
-            <asp:TextBox ID="txtEmail" runat="server" style="color:black;width:300px;" Placeholder="MaxiSaar_AOE@gmail.com"/>
+            <asp:TextBox ID="txtEmail" runat="server" style="color:black;width:300px;" Placeholder="MaxiSaar_AOE@gmail.com" MaxLength="30" TextMode="Email" />
         </div>
 
         <div class="form-group">
