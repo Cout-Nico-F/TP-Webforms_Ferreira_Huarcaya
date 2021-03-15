@@ -14,7 +14,7 @@ namespace WebForm
     public partial class WebForm1 : System.Web.UI.Page
     {
         public List<Articulo> Lista { get; set; }
-        public Articulo Buscar { get; set; }
+        //public Articulo Buscardor { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {

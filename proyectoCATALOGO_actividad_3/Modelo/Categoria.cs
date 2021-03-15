@@ -16,8 +16,9 @@ namespace Modelo
             Id = _id;
             Descripcion = _desc;
         }
-
+        /* Contructor */
         public Categoria() { }
+        
 
         public override string ToString()
         {
